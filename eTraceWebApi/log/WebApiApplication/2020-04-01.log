@@ -1,0 +1,6 @@
+2020-04-01 10:05:36,031 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-04-01 10:05:38,030 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-04-01 10:05:38,042 [7] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-04-01 10:05:38,241 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel

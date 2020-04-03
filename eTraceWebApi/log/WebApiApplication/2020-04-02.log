@@ -1,0 +1,20 @@
+2020-04-02 00:20:32,029 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-04-02 00:20:32,365 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-04-02 00:20:32,374 [7] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-04-02 00:20:32,425 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-02 00:29:31,444 [9] DEBUG WebApiApplication - SqlDump Info:select distinct status from  T_SMFixture with (nolock)
+2020-04-02 00:29:31,444 [46] DEBUG WebApiApplication - SqlDump Info: select Category,SubCategory from T_SMFixtureCat with (nolock)
+2020-04-02 00:29:31,448 [24] DEBUG WebApiApplication - SqlDump Info:select Dept from T_SMDept with (nolock)
+2020-04-02 00:29:31,477 [24] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-02 00:29:31,491 [46] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-02 00:29:31,510 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-02 05:59:13,908 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-04-02 05:59:14,230 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-04-02 05:59:14,244 [7] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-04-02 05:59:14,300 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-02 05:59:21,496 [10] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-02 06:01:34,453 [16] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel

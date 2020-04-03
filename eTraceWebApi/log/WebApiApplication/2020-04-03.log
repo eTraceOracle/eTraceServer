@@ -1,0 +1,75 @@
+2020-04-03 02:26:31,064 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-04-03 02:26:31,475 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-04-03 02:26:31,489 [7] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-04-03 02:26:31,544 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-03 02:28:49,091 [25] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1 ) as t
+2020-04-03 02:29:33,282 [25] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  ORDER BY T_TDHeader.ExtSerialNo, T_TDHeader.WIPIN
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-04-03 02:32:01,019 [25] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-03 02:32:41,983 [56] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ProcessName = 'TEST2') as t
+2020-04-03 02:33:38,983 [56] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ProcessName = 'TEST2' ORDER BY T_TDHeader.ExtSerialNo, T_TDHeader.WIPIN
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-04-03 02:34:14,102 [56] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-03 02:34:34,868 [44] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ProcessName = 'TEST2') as t
+2020-04-03 02:35:03,910 [44] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ProcessName = 'TEST2' ORDER BY T_TDHeader.ExtSerialNo, T_TDHeader.WIPIN
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-04-03 02:35:19,256 [44] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-03 02:47:08,596 [105] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-04-03 02:47:08,607 [105] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-04-03 02:47:08,612 [105] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-03 03:27:16,643 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-04-03 03:27:17,296 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-27 00:00:00' and a.CreatedOn<'2020-04-04 00:00:00') as t
+2020-04-03 03:27:17,324 [7] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-27 00:00:00' and a.CreatedOn<'2020-04-04 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-04-03 03:27:17,501 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-04-03 03:27:26,195 [9] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1 ) as t
+2020-04-03 03:27:58,318 [9] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  ORDER BY T_TDHeader.ExtSerialNo, T_TDHeader.WIPIN
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-04-03 03:30:43,732 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel

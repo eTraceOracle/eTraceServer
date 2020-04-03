@@ -1,0 +1,8 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Debug\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Debug\eTrace.IDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Debug\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Debug\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Debug\eTrace.Model.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Debug\eTrace.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Debug\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Debug\eTrace.IDAL.pdb

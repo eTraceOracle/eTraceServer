@@ -1,0 +1,39 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Service.SDKForNet.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Service.SDKForNet.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\log4net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\log4net.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Service.SDKForNet.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Service.SDKForNet.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\log4net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\log4net.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Service.SDKForNet.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Service.SDKForNet.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\log4net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\eTrace.Model.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\log4net.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\bin\Debug\Newtonsoft.Json.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Service.SDKForNet\obj\Debug\eTrace.Service.SDKForNet.pdb

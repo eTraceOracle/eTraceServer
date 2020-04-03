@@ -1,0 +1,103 @@
+2020-03-13 09:02:56,412 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-03-13 09:03:57,187 [7] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-13 09:03:58,009 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-03-13 09:03:58,250 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-13 09:04:06,680 [12] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.DJ IN ('P2714689') AND dest.DJ IN ('P2714689')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-13 09:04:06,976 [12] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.DJ IN ('P2714689') AND dest.DJ IN ('P2714689') ) as t
+2020-03-13 09:04:07,291 [12] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel

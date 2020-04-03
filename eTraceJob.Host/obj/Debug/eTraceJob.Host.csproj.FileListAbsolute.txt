@@ -1,0 +1,11 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\eTraceJobHost.exe.config
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\eTraceJobHost.exe
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\eTraceJobHost.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\log4net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\log4net.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\obj\Debug\eTraceJob.Host.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\obj\Debug\eTraceJobHost.exe
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceJob.Host\obj\Debug\eTraceJobHost.pdb

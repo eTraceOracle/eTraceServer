@@ -1,0 +1,333 @@
+2020-03-18 07:46:46,163 [24] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 07:52:56,061 [9] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 07:52:56,090 [9] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 07:52:56,127 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 07:56:20,297 [35] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 07:56:20,312 [35] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:40:57,077 [64] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:40:57,079 [64] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:41:12,164 [67] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 08:41:12,178 [67] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:41:12,188 [67] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:29,493 [89] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 08:43:29,508 [89] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:43:29,513 [89] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:32,881 [78] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 08:43:32,894 [78] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:43:32,902 [78] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:36,215 [80] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 08:43:36,230 [80] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:43:36,236 [80] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:40,508 [84] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 08:43:40,523 [84] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:43:40,528 [84] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:47,089 [86] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00') as t
+2020-03-18 08:43:47,102 [86] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CreatedOn>='2020-03-11 00:00:00' and a.CreatedOn<'2020-03-19 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:43:47,108 [86] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:51,232 [70] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-03-18 08:43:51,233 [70] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-03-18 08:43:51,237 [70] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:55,966 [64] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-03-18 08:43:55,968 [64] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-03-18 08:43:55,970 [64] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:43:57,443 [81] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-18 08:43:58,470 [81] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-03-18 08:43:58,663 [81] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:44:10,522 [90] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1) as t
+2020-03-18 08:44:11,407 [90] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, ISNULL((select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 ModelRev from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as ModelRev,	 
+     CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:44:11,423 [90] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:44:46,916 [96] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:44:46,918 [96] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:45:39,151 [87] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:45:39,163 [87] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:45:42,391 [101] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:45:42,392 [101] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:45:44,249 [99] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:45:44,250 [99] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:46:19,143 [93] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:46:19,145 [93] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:49:49,249 [50] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:49:49,251 [50] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,MaterialNo,MaterialRevision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv,StorageBin as Locator,
+                      StorageType,CreatedOn,CreatedBy,ChangedOn,ChangedBy,DateCode,LotNo,CountryOfOrigin as COO,ExpDate,RecDocNo,RecDocItem,RTLot,RecDate,RoHS,PurOrdNo,PurOrdItem,
+                      DeliveryType,VendorID,VendorName,VendorPN,InvoiceNo,BillofLading,DN,HeaderText,ProdDate,ReasonCode,Operator,StockType,
+                      ItemText,MatSuffix1,MatSuffix2,MatSuffix3,AddlText,ReferenceCLID,BoxID,Manufacturer,ManufacturerPN,QMLStatus,NextReviewDate,
+                      ReviewStatus,ReviewedOn,ReviewedBy,SampleSize,AddlData,Stemp,MSL,SupplyType,LastDJ,LastTransaction,StatusCode
+                      FROM T_CLMaster with (nolock) where 1=1  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:50:14,077 [46] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:50:39,349 [89] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-18 08:50:44,955 [62] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT OrgCode,CLID,BoxID, MaterialNo,MaterialRevision AS Revision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv, StorageBin as Locator, AddlText, ISNULL(StorageType,'') as StorageType, StockType,DateCode,LotNo,CountryofOrigin as COO, ExpDate, RecDocNo,  RTLot,RecDate,RoHS, PurOrdNo, PurOrdItem, VendorID, VendorName, VendorPN,Manufacturer, ManufacturerPN, QMLStatus, NextReviewDate, ReviewStatus,ReviewedOn, ReviewedBy,CreatedOn,CreatedBy,ChangedOn,ChangedBy ,LastTransaction, MSL, InvoiceNo,StatusCode FROM T_CLMaster WITH (nolock) where 1=1  and StatusCode in ('1','4','6','9')  and OrgCode = '680'  and MaterialNo = '801-008123-0001' ) as t
+2020-03-18 08:50:44,962 [62] DEBUG WebApiApplication - SqlDump Info:SELECT OrgCode,CLID,BoxID, MaterialNo,MaterialRevision AS Revision,MaterialDesc,QtyBaseUOM,BaseUOM,SLOC as SubInv, StorageBin as Locator, AddlText, ISNULL(StorageType,'') as StorageType, StockType,DateCode,LotNo,CountryofOrigin as COO, ExpDate, RecDocNo,  RTLot,RecDate,RoHS, PurOrdNo, PurOrdItem, VendorID, VendorName, VendorPN,Manufacturer, ManufacturerPN, QMLStatus, NextReviewDate, ReviewStatus,ReviewedOn, ReviewedBy,CreatedOn,CreatedBy,ChangedOn,ChangedBy ,LastTransaction, MSL, InvoiceNo,StatusCode FROM T_CLMaster WITH (nolock) where 1=1  and StatusCode in ('1','4','6','9')  and OrgCode = '680'  and MaterialNo = '801-008123-0001'  ORDER BY  CLID, MaterialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-03-18 08:50:45,041 [62] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel

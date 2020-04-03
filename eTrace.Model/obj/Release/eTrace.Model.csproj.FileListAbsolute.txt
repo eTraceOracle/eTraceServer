@@ -1,0 +1,15 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\bin\Release\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\bin\Release\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\bin\Release\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\bin\Release\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Model\bin\Release\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Model\bin\Release\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Model\obj\Release\eTrace.Model.pdb

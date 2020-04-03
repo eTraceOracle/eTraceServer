@@ -1,0 +1,90 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.dll.config
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Common.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.SqlServerDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\log4net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Web.Http.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Common.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.IDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.SqlServerDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\log4net.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Web.Http.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.OOXML.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.dll.config
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Common.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.IDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.SqlServerDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\log4net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Net.Http.Formatting.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Web.Http.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.OOXML.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.OpenXml4Net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Common.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.IDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\eTrace.SqlServerDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\log4net.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Net.Http.Formatting.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\System.Web.Http.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.dll.config
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Core.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Common.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.IDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.SqlServerDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\log4net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\System.Net.Http.Formatting.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\System.Web.Http.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\NPOI.OOXML.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\NPOI.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Common.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.IDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.Model.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\eTrace.SqlServerDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\log4net.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\Newtonsoft.Json.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\System.Net.Http.Formatting.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\System.Web.Http.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.Core\obj\Debug\eTrace.Core.pdb

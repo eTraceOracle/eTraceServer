@@ -1,0 +1,24 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.IBLL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.IBLL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.Report.IBLL.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.IBLL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.IBLL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.IBLL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.IBLL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.Report.IBLL.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.IBLL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.IBLL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.IBLL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.IBLL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\bin\Debug\eTrace.Model.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.Report.IBLL.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.IBLL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IBLL\obj\Debug\eTrace.IBLL.pdb

@@ -1,0 +1,10 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\eTrace.Job.EmailTask.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\eTrace.Job.EmailTask.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\log4net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\log4net.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\obj\Debug\eTrace.Job.EmailTask.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\obj\Debug\eTrace.Job.EmailTask.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Job.EmailTask\obj\Debug\eTrace.Job.EmailTask.pdb

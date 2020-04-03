@@ -1,0 +1,871 @@
+2020-03-04 09:35:33,625 [8] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-03-04 09:41:48,540 [6] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 09:42:56,477 [7] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"库存组织"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"欠缺物料号"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"欠缺物料描述"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"欠缺物料价格"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"欠缺物料采购员"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"欠缺数量"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"制造商"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"制造商物料号"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AML状态"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"过多物料号"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"过多物料描述"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"过多物料价格"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"过多物料采购员"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"过多物料的最小包装数量"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"库存架位"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"子库架位"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"有效期"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"收货批次"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"库存数量"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"多出数量"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"被分配数量"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"可用库存数量"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"可转移数量"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"运输中数量"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 09:52:46,978 [6] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-03-04 10:01:38,102 [19] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 10:01:51,145 [26] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"库存组织"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"欠缺物料号"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"欠缺物料描述"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"欠缺物料价格"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"欠缺物料采购员"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"欠缺数量"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"制造商"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"制造商物料号"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AML状态"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"过多物料号"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"过多物料描述"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"过多物料价格"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"过多物料采购员"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"过多物料的最小包装数量"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"库存架位"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"子库架位"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"有效期"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"收货批次"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"库存数量"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"多出数量"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"被分配数量"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"可用库存数量"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"可转移数量"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"运输中数量"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 10:17:31,331 [19] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 10:17:31,633 [19] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:15:34.5580247]
+2020-03-04 10:18:41,559 [35] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 10:36:11,096 [26] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 10:36:11,104 [26] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:34:19.9357111]
+2020-03-04 10:42:22,933 [35] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 10:42:22,934 [35] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:23:41.2934898]
+2020-03-04 10:42:28,118 [36] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 10:43:07,702 [47] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"库存组织"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"欠缺物料号"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"欠缺物料描述"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"欠缺物料价格"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"欠缺物料采购员"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"欠缺数量"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"制造商"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"制造商物料号"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AML状态"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"过多物料号"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"过多物料描述"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"过多物料价格"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"过多物料采购员"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"过多物料的最小包装数量"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"库存架位"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"子库架位"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"有效期"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"收货批次"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"库存数量"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"多出数量"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"被分配数量"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"可用库存数量"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"可转移数量"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"运输中数量"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/04","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/11","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 10:47:37,516 [36] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 10:47:37,518 [36] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:05:09.3733256]
+2020-03-04 10:59:07,907 [10] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-03-04 10:59:29,807 [7] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"BC00ZA9C","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 10:59:31,902 [7] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC00ZA9C')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 10:59:31,933 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC00ZA9C') ) as t
+2020-03-04 10:59:32,031 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 10:59:32,445 [7] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:02.1449355]
+2020-03-04 11:00:51,625 [8] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"BC0232RH","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:00:51,626 [8] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC0232RH')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:00:51,640 [8] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC0232RH') ) as t
+2020-03-04 11:00:51,675 [8] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:00:51,677 [8] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.0179216]
+2020-03-04 11:00:58,586 [7] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:00:58,586 [7] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:00:59,355 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-03-04 11:00:59,548 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:00:59,550 [7] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.9515185]
+2020-03-04 11:01:53,782 [13] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"BC023OUR","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:01:53,783 [13] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC023OUR')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:01:53,796 [13] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC023OUR') ) as t
+2020-03-04 11:01:53,802 [13] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:01:53,804 [13] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.0184220]
+2020-03-04 11:02:19,372 [11] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:02:19,372 [11] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:02:19,385 [11] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') ) as t
+2020-03-04 11:02:19,392 [11] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:02:19,394 [11] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.0178211]
+2020-03-04 11:04:24,776 [6] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":true},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:04:37,331 [6] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1  AND sour.IntSN IN ('') OR dest.IntSN IN ('')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:04:38,418 [6] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1  AND sour.IntSN IN ('') OR dest.IntSN IN ('') ) as t
+2020-03-04 11:04:39,160 [6] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:04:39,162 [6] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:14.3705015]
+2020-03-04 11:05:05,288 [12] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:05:06,963 [12] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:05:06,980 [12] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')  ) as t
+2020-03-04 11:05:06,991 [12] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:05:06,992 [12] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.6987741]
+2020-03-04 11:05:25,985 [12] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:05:27,683 [12] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:05:27,686 [12] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') ) as t
+2020-03-04 11:05:27,689 [12] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:05:27,691 [12] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.7043095]
+2020-03-04 11:05:39,928 [7] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":true},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:06:06,656 [7] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1  AND sour.IntSN IN ('') OR dest.IntSN IN ('')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:06:07,702 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1  AND sour.IntSN IN ('') OR dest.IntSN IN ('') ) as t
+2020-03-04 11:06:08,458 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:06:08,460 [7] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:28.5306222]
+2020-03-04 11:06:19,019 [14] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:06:30,926 [14] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:06:30,929 [14] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')  ) as t
+2020-03-04 11:06:30,933 [14] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:06:30,934 [14] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:11.9129271]
+2020-03-04 11:07:39,065 [16] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":true},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:25:49,515 [16] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:25:49,515 [20] DEBUG TimingActionFilter - url:http://localhost:51239/api/Resource/GetProductStationATE,arg--key:requestData,value:null
+
+2020-03-04 11:25:49,515 [16] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:25:49,515 [20] DEBUG TimingActionFilter - url:http://localhost:51239/api/Resource/GetProductStationATE,arg--key:requestData,value:null
+
+2020-03-04 11:25:49,545 [16] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')  ) as t
+2020-03-04 11:25:49,548 [16] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:25:57,241 [16] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:18:10.4376500]
+2020-03-04 11:25:57,510 [20] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-03-04 11:25:57,513 [20] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-03-04 11:25:57,519 [20] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:25:57,521 [20] DEBUG TimingActionFilter - [Execution ofResource- GetProductStationATE took 00:00:08.0024328]
+2020-03-04 11:26:05,327 [26] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"BC03FYTU","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:26:09,218 [26] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:26:09,221 [26] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('BC03FYTU') ) as t
+2020-03-04 11:26:09,225 [26] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:26:09,231 [26] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:03.8960052]
+2020-03-04 11:26:18,565 [21] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:26:18,566 [21] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:26:19,673 [21] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')  ) as t
+2020-03-04 11:26:20,486 [21] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:26:20,490 [21] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.9083051]
+2020-03-04 11:26:33,607 [26] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:26:33,607 [26] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:26:34,761 [26] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')  ) as t
+2020-03-04 11:26:35,510 [26] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:26:35,511 [26] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.8942712]
+2020-03-04 11:27:02,975 [28] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"BG00LT1M","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-04 11:27:02,975 [28] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')   ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-03-04 11:27:04,095 [28] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND sour.IntSN IN ('BG00LT1M')  OR dest.IntSN IN ('BG00LT1M')  ) as t
+2020-03-04 11:27:04,819 [28] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-04 11:27:04,822 [28] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.8419306]

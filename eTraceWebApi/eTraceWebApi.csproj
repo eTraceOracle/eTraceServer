@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E61A06C7-96E6-4059-9CF5-AE078F6FDA79}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eTraceWebApi</RootNamespace>
+    <AssemblyName>eTraceWebApi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\eTraceWebApi.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.6.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Reports\CommonController.cs" />
+    <Compile Include="Controllers\Reports\EPM\EPMResourceController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEPMEventController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportMobileEquipmentController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMFeederController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMFixtureVerificationController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMMSDController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMSController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMSolderPasteGlueController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMFixtureTransController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMJobDataRecordsController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMPIController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMFixtureInspHeaderController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMInspSpecController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMMatInvController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMMaterialController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMMatTransController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportSMLocController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEquipmentPMSpecController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEquipmentPMPlanController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEquipmentRepairHeaderController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEquipmentFixturePMHeaderController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEquipmentController.cs" />
+    <Compile Include="Controllers\Reports\EPM\ReportEPMController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportSMTQCDataController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportUploadCiscoDataController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportWIPUnitByDJController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportWIPUnitBySNControllery.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportYieldReportByDJController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportYieldReportDailyController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportYieldReportFPYController.cs" />
+    <Compile Include="Controllers\Reports\Quality\ReportYieldReportWeeklyController.cs" />
+    <Compile Include="Controllers\Reports\ReportProductController.cs" />
+    <Compile Include="Controllers\Reports\ReportRepairController.cs" />
+    <Compile Include="Controllers\Reports\ReportWIPProductController.cs" />
+    <Compile Include="Controllers\Reports\ResourceController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportPickOrderController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportComponentsUsedController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReporteJITBuildPlanController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportFGAgingController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportInvOptimizationController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportIPPExceptionController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportiProAMLvseTraceController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportLabelInfoController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportAutoeJITPlanController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReporteJITFrequencyController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportOnHandCompController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportRawMatPackingController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportRawMatPakStatusController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportSearchCLIDController.cs" />
+    <Compile Include="Controllers\Reports\WM\ReportSOShipmentController.cs" />
+    <Compile Include="ServerBaseController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\eTraceOracleERP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\sfc\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SMTServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\eTraceOracleERP\eTraceOracleERP.wsdl" />
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.AccessCard.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.BJ_Rs.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.CancelMOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.CheckBoxIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.CheckProdLineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.CheckProdLine_LDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.CLIDSlot.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ConfirmCLIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ConfirmCLID_LDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ConfirmMOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ConversionResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.CreateGRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.DeleteMslResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.dj_response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetCycleCount.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetDJInfoSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetJobHeader2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetJobHeaderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetJobMslResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetMSLMachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetMSLModelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetProdLineByLineTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetProdLineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetProductStructureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GetSMTMachinesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.GRHeaderStructure.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.HW_ExportDataInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.InsertJobResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.InsertMslResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ItemData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ItemRevList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ItemType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.MOData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.MOrderPostResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.MOSpecialPickResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.MO_Information.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.MO_List.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.NewSeqNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.PCBSlotLightOnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.PostBatchRslt.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.PostSLEDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.PPDataRst.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.PrintSMTDJLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.PrintSMTDJLabel_LDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ProcessDockingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ProcessDocking_LDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ProdPickingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ProdPickingStructure.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ReadEventIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ReadEventID_LDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.SAPPN_Check.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.ShipInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.SlotCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.SlotShortageList.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.SMTCLIDStatusChangedByPCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.SMTCLIDStatusChangedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.SMTData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.UpdateJobResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.UpdateJobStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\eTraceOracleERP\eTraceWebApi.eTraceOracleERP.UserData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\sfc\eTraceOracleERP.wsdl" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.AccessCard.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.BJ_Rs.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CancelMOResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CheckBoxIDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CheckProdLineResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CheckProdLine_LDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CLIDSlot.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CLID_Info.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ConfirmCLIDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ConfirmCLID_LDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ConfirmMOResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ConnectionTestResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ConnTestData.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ConversionResult.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.CreateGRResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.DeleteMslResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.dj_response.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetCycleCount.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetDJInfoSMTResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetItemsResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetJobHeader2Response.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetJobHeaderResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetJobMslResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetMSLMachineResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetMSLModelResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetProdLineByLineTypeResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetProdLineResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetProductStructureResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GetSMTMachinesResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.GRHeaderStructure.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.HW_ExportDataInfo.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.InsertJobResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.InsertMslResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ItemData.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ItemRevList.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ItemType.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.MOData.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.MOrderPostResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.MOSpecialPickResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.MO_Information.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.MO_List.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.NewSeqNOResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.PCBSlotLightOnResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.PostBatchRslt.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.PostSLEDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.PPDataRst.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.PrintSMTDJLabelResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.PrintSMTDJLabel_LDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ProcessDockingResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ProcessDocking_LDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ProdPickingResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ProdPickingStructure.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ReadEventIDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ReadEventID_LDResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.Result.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.SAPPN_Check.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.ShipInfo.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.SlotCheckResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.SlotShortageList.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.SMTCLIDStatusChangedByPCResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.SMTCLIDStatusChangedResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.SMTData.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.UpdateJobResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.UpdateJobStatusResponse.datasource" />
+    <Content Include="Service References\sfc\eTraceWebApi.sfc.UserData.datasource" />
+    <None Include="Service References\SMTServiceReference\SMTDataService.disco" />
+    <None Include="Service References\SMTServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\SMTServiceReference\configuration.svcinfo" />
+    <None Include="Service References\SMTServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\eTraceOracleERP\eTraceOracleERP.disco" />
+    <None Include="Service References\eTraceOracleERP\configuration91.svcinfo" />
+    <None Include="Service References\eTraceOracleERP\configuration.svcinfo" />
+    <None Include="Service References\eTraceOracleERP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\sfc\configuration.svcinfo" />
+    <None Include="Service References\sfc\configuration91.svcinfo" />
+    <None Include="Service References\sfc\eTraceOracleERP.disco" />
+    <None Include="Service References\sfc\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <None Include="Service References\SMTServiceReference\SMTDataService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\webapi.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTrace.BLL\eTrace.Report.BLL.csproj">
+      <Project>{1fba224c-714f-4138-8490-61945063c3ac}</Project>
+      <Name>eTrace.Report.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.Common\eTrace.Common.csproj">
+      <Project>{3b07dbfc-7786-42b9-9081-66c4f2c2ae70}</Project>
+      <Name>eTrace.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.Core\eTrace.Core.csproj">
+      <Project>{a69a58d2-69cc-4a23-b595-788bae882ce0}</Project>
+      <Name>eTrace.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.IBLL\eTrace.Report.IBLL.csproj">
+      <Project>{b922e900-65fb-4bb1-a37f-e50effce2f05}</Project>
+      <Name>eTrace.Report.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.Model\eTrace.Model.csproj">
+      <Project>{35fa3bdf-61c8-47d7-9f34-13b2cc2b00cf}</Project>
+      <Name>eTrace.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.Service.SDKForNet\eTrace.Service.SDKForNet.csproj">
+      <Project>{1c6b7fcf-d21b-4282-ba4e-b8784d3814bb}</Project>
+      <Name>eTrace.Service.SDKForNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RptQualityData\RptQualityData\RptQualityData.vbproj">
+      <Project>{6c736bdd-2920-4c60-8e76-c9030bb78a3a}</Project>
+      <Name>RptQualityData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\eTraceOracleERP\" />
+    <WCFMetadataStorage Include="Service References\SMTServiceReference\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51239</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/WebApi</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

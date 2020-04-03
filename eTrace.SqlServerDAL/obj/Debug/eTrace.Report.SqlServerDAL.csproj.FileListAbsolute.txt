@@ -1,0 +1,72 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Common.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\log4net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OOXML.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Common.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.IDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\log4net.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.Report.SqlServerDAL.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.SqlServerDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.SqlServerDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.dll.config
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.dll.config
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Common.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.IDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\log4net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OOXML.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OpenXml4Net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Common.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.IDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\log4net.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.Report.SqlServerDAL.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.SqlServerDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.SqlServerDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.dll.config
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.SqlServerDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Common.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.IDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\log4net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OOXML.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OpenXml4Net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Common.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.IDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\eTrace.Model.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\log4net.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\Newtonsoft.Json.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\bin\Debug\ICSharpCode.SharpZipLib.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.Report.SqlServerDAL.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.SqlServerDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.SqlServerDAL\obj\Debug\eTrace.SqlServerDAL.pdb

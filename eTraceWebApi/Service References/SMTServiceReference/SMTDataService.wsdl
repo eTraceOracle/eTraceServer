@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getMachineType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="equipment" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMachineTypeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSMTPlanByDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dt" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSMTPlanByDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSMTPlanByDateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFixedLocatorByPN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="floor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFixedLocatorByPNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFixedLocatorByPNResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifyFixedLocator">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="feeder" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="floor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modifyFixedLocatorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modifyFixedLocatorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMSL">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="program" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMSLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMSLResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getLineList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getLineListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getLineListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSiplaceLineList">
+        <s:complexType />
+      </s:element>
+      <s:element name="getSiplaceLineListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSiplaceLineListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineListByLine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMachineListByLineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMachineListByLineResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSiplaceProgramList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="side" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSiplaceProgramListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getSiplaceProgramListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMSL_Beta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lineID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="program" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMSL_BetaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMSL_BetaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SMTPlan_For_Remind">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="line" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_SMTPlan_For_RemindResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_SMTPlan_For_RemindResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Modify_SMTPlan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="line" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mi" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Modify_SMTPlanResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Modify_SMTPlan_Status">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Modify_SMTPlan_StatusResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSMTInspectionData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSMTInspectionDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSMTInspectionDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWIPBYIntSN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getWIPBYIntSNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getWIPBYIntSNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyByClid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getQtyByClidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getQtyByClidResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAOIBoardData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="equipmentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="result" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dj" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAOIBoardDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAOIBoardDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="pmFeederNewPM">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="equipmentID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prodLine" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="useCount" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="scheduledDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="pmFeederNewPMResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pmFeederNewPMResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPackagingUnitChain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="equipmentID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="checkPackagingUnitChainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="checkPackagingUnitChainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getMachineTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:getMachineType" />
+  </wsdl:message>
+  <wsdl:message name="getMachineTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:getMachineTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSMTPlanByDateSoapIn">
+    <wsdl:part name="parameters" element="tns:getSMTPlanByDate" />
+  </wsdl:message>
+  <wsdl:message name="getSMTPlanByDateSoapOut">
+    <wsdl:part name="parameters" element="tns:getSMTPlanByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFixedLocatorByPNSoapIn">
+    <wsdl:part name="parameters" element="tns:getFixedLocatorByPN" />
+  </wsdl:message>
+  <wsdl:message name="getFixedLocatorByPNSoapOut">
+    <wsdl:part name="parameters" element="tns:getFixedLocatorByPNResponse" />
+  </wsdl:message>
+  <wsdl:message name="modifyFixedLocatorSoapIn">
+    <wsdl:part name="parameters" element="tns:modifyFixedLocator" />
+  </wsdl:message>
+  <wsdl:message name="modifyFixedLocatorSoapOut">
+    <wsdl:part name="parameters" element="tns:modifyFixedLocatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMSLSoapIn">
+    <wsdl:part name="parameters" element="tns:getMSL" />
+  </wsdl:message>
+  <wsdl:message name="getMSLSoapOut">
+    <wsdl:part name="parameters" element="tns:getMSLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLineListSoapIn">
+    <wsdl:part name="parameters" element="tns:getLineList" />
+  </wsdl:message>
+  <wsdl:message name="getLineListSoapOut">
+    <wsdl:part name="parameters" element="tns:getLineListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSiplaceLineListSoapIn">
+    <wsdl:part name="parameters" element="tns:getSiplaceLineList" />
+  </wsdl:message>
+  <wsdl:message name="getSiplaceLineListSoapOut">
+    <wsdl:part name="parameters" element="tns:getSiplaceLineListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMachineListByLineSoapIn">
+    <wsdl:part name="parameters" element="tns:getMachineListByLine" />
+  </wsdl:message>
+  <wsdl:message name="getMachineListByLineSoapOut">
+    <wsdl:part name="parameters" element="tns:getMachineListByLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSiplaceProgramListSoapIn">
+    <wsdl:part name="parameters" element="tns:getSiplaceProgramList" />
+  </wsdl:message>
+  <wsdl:message name="getSiplaceProgramListSoapOut">
+    <wsdl:part name="parameters" element="tns:getSiplaceProgramListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMSL_BetaSoapIn">
+    <wsdl:part name="parameters" element="tns:getMSL_Beta" />
+  </wsdl:message>
+  <wsdl:message name="getMSL_BetaSoapOut">
+    <wsdl:part name="parameters" element="tns:getMSL_BetaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_SMTPlan_For_RemindSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_SMTPlan_For_Remind" />
+  </wsdl:message>
+  <wsdl:message name="Get_SMTPlan_For_RemindSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_SMTPlan_For_RemindResponse" />
+  </wsdl:message>
+  <wsdl:message name="Modify_SMTPlanSoapIn">
+    <wsdl:part name="parameters" element="tns:Modify_SMTPlan" />
+  </wsdl:message>
+  <wsdl:message name="Modify_SMTPlanSoapOut">
+    <wsdl:part name="parameters" element="tns:Modify_SMTPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="Modify_SMTPlan_StatusSoapIn">
+    <wsdl:part name="parameters" element="tns:Modify_SMTPlan_Status" />
+  </wsdl:message>
+  <wsdl:message name="Modify_SMTPlan_StatusSoapOut">
+    <wsdl:part name="parameters" element="tns:Modify_SMTPlan_StatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSMTInspectionDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSMTInspectionData" />
+  </wsdl:message>
+  <wsdl:message name="GetSMTInspectionDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSMTInspectionDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getWIPBYIntSNSoapIn">
+    <wsdl:part name="parameters" element="tns:getWIPBYIntSN" />
+  </wsdl:message>
+  <wsdl:message name="getWIPBYIntSNSoapOut">
+    <wsdl:part name="parameters" element="tns:getWIPBYIntSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="getQtyByClidSoapIn">
+    <wsdl:part name="parameters" element="tns:getQtyByClid" />
+  </wsdl:message>
+  <wsdl:message name="getQtyByClidSoapOut">
+    <wsdl:part name="parameters" element="tns:getQtyByClidResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAOIBoardDataSoapIn">
+    <wsdl:part name="parameters" element="tns:getAOIBoardData" />
+  </wsdl:message>
+  <wsdl:message name="getAOIBoardDataSoapOut">
+    <wsdl:part name="parameters" element="tns:getAOIBoardDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="pmFeederNewPMSoapIn">
+    <wsdl:part name="parameters" element="tns:pmFeederNewPM" />
+  </wsdl:message>
+  <wsdl:message name="pmFeederNewPMSoapOut">
+    <wsdl:part name="parameters" element="tns:pmFeederNewPMResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkPackagingUnitChainSoapIn">
+    <wsdl:part name="parameters" element="tns:checkPackagingUnitChain" />
+  </wsdl:message>
+  <wsdl:message name="checkPackagingUnitChainSoapOut">
+    <wsdl:part name="parameters" element="tns:checkPackagingUnitChainResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SMTDataServiceSoap">
+    <wsdl:operation name="getMachineType">
+      <wsdl:input message="tns:getMachineTypeSoapIn" />
+      <wsdl:output message="tns:getMachineTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSMTPlanByDate">
+      <wsdl:input message="tns:getSMTPlanByDateSoapIn" />
+      <wsdl:output message="tns:getSMTPlanByDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFixedLocatorByPN">
+      <wsdl:input message="tns:getFixedLocatorByPNSoapIn" />
+      <wsdl:output message="tns:getFixedLocatorByPNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modifyFixedLocator">
+      <wsdl:input message="tns:modifyFixedLocatorSoapIn" />
+      <wsdl:output message="tns:modifyFixedLocatorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMSL">
+      <wsdl:input message="tns:getMSLSoapIn" />
+      <wsdl:output message="tns:getMSLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getLineList">
+      <wsdl:input message="tns:getLineListSoapIn" />
+      <wsdl:output message="tns:getLineListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSiplaceLineList">
+      <wsdl:input message="tns:getSiplaceLineListSoapIn" />
+      <wsdl:output message="tns:getSiplaceLineListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMachineListByLine">
+      <wsdl:input message="tns:getMachineListByLineSoapIn" />
+      <wsdl:output message="tns:getMachineListByLineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSiplaceProgramList">
+      <wsdl:input message="tns:getSiplaceProgramListSoapIn" />
+      <wsdl:output message="tns:getSiplaceProgramListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMSL_Beta">
+      <wsdl:input message="tns:getMSL_BetaSoapIn" />
+      <wsdl:output message="tns:getMSL_BetaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_SMTPlan_For_Remind">
+      <wsdl:input message="tns:Get_SMTPlan_For_RemindSoapIn" />
+      <wsdl:output message="tns:Get_SMTPlan_For_RemindSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Modify_SMTPlan">
+      <wsdl:input message="tns:Modify_SMTPlanSoapIn" />
+      <wsdl:output message="tns:Modify_SMTPlanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Modify_SMTPlan_Status">
+      <wsdl:input message="tns:Modify_SMTPlan_StatusSoapIn" />
+      <wsdl:output message="tns:Modify_SMTPlan_StatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSMTInspectionData">
+      <wsdl:input message="tns:GetSMTInspectionDataSoapIn" />
+      <wsdl:output message="tns:GetSMTInspectionDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getWIPBYIntSN">
+      <wsdl:input message="tns:getWIPBYIntSNSoapIn" />
+      <wsdl:output message="tns:getWIPBYIntSNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getQtyByClid">
+      <wsdl:input message="tns:getQtyByClidSoapIn" />
+      <wsdl:output message="tns:getQtyByClidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAOIBoardData">
+      <wsdl:input message="tns:getAOIBoardDataSoapIn" />
+      <wsdl:output message="tns:getAOIBoardDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="pmFeederNewPM">
+      <wsdl:input message="tns:pmFeederNewPMSoapIn" />
+      <wsdl:output message="tns:pmFeederNewPMSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="checkPackagingUnitChain">
+      <wsdl:input message="tns:checkPackagingUnitChainSoapIn" />
+      <wsdl:output message="tns:checkPackagingUnitChainSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SMTDataServiceSoap" type="tns:SMTDataServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMachineType">
+      <soap:operation soapAction="http://tempuri.org/getMachineType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSMTPlanByDate">
+      <soap:operation soapAction="http://tempuri.org/getSMTPlanByDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFixedLocatorByPN">
+      <soap:operation soapAction="http://tempuri.org/getFixedLocatorByPN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyFixedLocator">
+      <soap:operation soapAction="http://tempuri.org/modifyFixedLocator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMSL">
+      <soap:operation soapAction="http://tempuri.org/getMSL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLineList">
+      <soap:operation soapAction="http://tempuri.org/getLineList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSiplaceLineList">
+      <soap:operation soapAction="http://tempuri.org/getSiplaceLineList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineListByLine">
+      <soap:operation soapAction="http://tempuri.org/getMachineListByLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSiplaceProgramList">
+      <soap:operation soapAction="http://tempuri.org/getSiplaceProgramList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMSL_Beta">
+      <soap:operation soapAction="http://tempuri.org/getMSL_Beta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SMTPlan_For_Remind">
+      <soap:operation soapAction="http://tempuri.org/Get_SMTPlan_For_Remind" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modify_SMTPlan">
+      <soap:operation soapAction="http://tempuri.org/Modify_SMTPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modify_SMTPlan_Status">
+      <soap:operation soapAction="http://tempuri.org/Modify_SMTPlan_Status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMTInspectionData">
+      <soap:operation soapAction="http://tempuri.org/GetSMTInspectionData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWIPBYIntSN">
+      <soap:operation soapAction="http://tempuri.org/getWIPBYIntSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyByClid">
+      <soap:operation soapAction="http://tempuri.org/getQtyByClid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAOIBoardData">
+      <soap:operation soapAction="http://tempuri.org/getAOIBoardData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pmFeederNewPM">
+      <soap:operation soapAction="http://tempuri.org/pmFeederNewPM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPackagingUnitChain">
+      <soap:operation soapAction="http://tempuri.org/checkPackagingUnitChain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SMTDataServiceSoap12" type="tns:SMTDataServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMachineType">
+      <soap12:operation soapAction="http://tempuri.org/getMachineType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSMTPlanByDate">
+      <soap12:operation soapAction="http://tempuri.org/getSMTPlanByDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFixedLocatorByPN">
+      <soap12:operation soapAction="http://tempuri.org/getFixedLocatorByPN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyFixedLocator">
+      <soap12:operation soapAction="http://tempuri.org/modifyFixedLocator" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMSL">
+      <soap12:operation soapAction="http://tempuri.org/getMSL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLineList">
+      <soap12:operation soapAction="http://tempuri.org/getLineList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSiplaceLineList">
+      <soap12:operation soapAction="http://tempuri.org/getSiplaceLineList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMachineListByLine">
+      <soap12:operation soapAction="http://tempuri.org/getMachineListByLine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSiplaceProgramList">
+      <soap12:operation soapAction="http://tempuri.org/getSiplaceProgramList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMSL_Beta">
+      <soap12:operation soapAction="http://tempuri.org/getMSL_Beta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_SMTPlan_For_Remind">
+      <soap12:operation soapAction="http://tempuri.org/Get_SMTPlan_For_Remind" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modify_SMTPlan">
+      <soap12:operation soapAction="http://tempuri.org/Modify_SMTPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Modify_SMTPlan_Status">
+      <soap12:operation soapAction="http://tempuri.org/Modify_SMTPlan_Status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSMTInspectionData">
+      <soap12:operation soapAction="http://tempuri.org/GetSMTInspectionData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getWIPBYIntSN">
+      <soap12:operation soapAction="http://tempuri.org/getWIPBYIntSN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getQtyByClid">
+      <soap12:operation soapAction="http://tempuri.org/getQtyByClid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAOIBoardData">
+      <soap12:operation soapAction="http://tempuri.org/getAOIBoardData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pmFeederNewPM">
+      <soap12:operation soapAction="http://tempuri.org/pmFeederNewPM" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkPackagingUnitChain">
+      <soap12:operation soapAction="http://tempuri.org/checkPackagingUnitChain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SMTDataService">
+    <wsdl:port name="SMTDataServiceSoap" binding="tns:SMTDataServiceSoap">
+      <soap:address location="http://cnapgzhoapp05:2472/SMTDataService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SMTDataServiceSoap12" binding="tns:SMTDataServiceSoap12">
+      <soap12:address location="http://cnapgzhoapp05:2472/SMTDataService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

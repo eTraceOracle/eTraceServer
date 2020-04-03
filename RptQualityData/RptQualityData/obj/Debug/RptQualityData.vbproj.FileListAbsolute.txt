@@ -1,0 +1,27 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.Resources.resources
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.vbproj.GenerateResource.Cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.vbprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.vbprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.Resources.resources
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.vbproj.GenerateResource.Cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\bin\Debug\RptQualityData.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.vbprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.Resources.resources
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.vbproj.GenerateResource.Cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\RptQualityData\RptQualityData\obj\Debug\RptQualityData.pdb

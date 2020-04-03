@@ -1,0 +1,1052 @@
+2020-02-26 08:56:30,157 [8] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 09:01:14,023 [27] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"2222","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 09:01:36,756 [27] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.IntSN IN ('2222')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 09:01:36,807 [27] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.IntSN IN ('2222') ) as t
+2020-02-26 09:01:40,095 [27] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 09:01:42,825 [27] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:22.8044268]
+2020-02-26 10:48:44,811 [10] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 10:48:45,452 [11] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 10:48:47,793 [11] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 10:48:47,904 [11] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 10:48:54,798 [11] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 10:49:01,794 [11] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:02.5295578]
+2020-02-26 10:50:13,367 [10] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 10:50:13,367 [10] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 10:50:13,436 [10] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 10:50:13,473 [10] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 10:50:16,528 [10] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.0943997]
+2020-02-26 10:51:22,336 [19] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 10:51:22,336 [19] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 10:51:22,409 [19] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 10:51:22,440 [19] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 10:51:45,454 [19] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.0994784]
+2020-02-26 10:51:57,370 [21] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 10:51:57,370 [21] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 10:51:57,457 [21] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 10:51:57,482 [21] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 10:52:00,454 [21] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.1110730]
+2020-02-26 10:52:12,504 [12] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataSummary,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 10:52:12,511 [12] DEBUG WebApiApplication - SqlDump Info:SELECT ISNULL(T_ProductRouting.SeqNo, 99999) AS SeqNo, 
+                            dest.InvOrg, 
+                            dest.Model, 
+                            dest.PCBA,
+                            dest.TVA, 
+                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END AS ProdLine, 
+                                                     dest.CurrentProcess, 
+                            dest.Result, 
+                            ISNULL(sour.PCBA, '''') AS MBPCBA, 
+                            COUNT(dest.Result) AS Count, 
+                                dest.DJ, dest.JobID
+                    FROM   T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+                         T_WIPHeader AS sour WITH (NOLOCK) ON dest.MotherBoardSN = sour.WIPID LEFT OUTER JOIN
+                         T_ProductRouting WITH (NOLOCK) ON dest.Model = T_ProductRouting.Model AND dest.PCBA = T_ProductRouting.PCBA AND 
+                         dest.CurrentProcess = T_ProductRouting.Process  WHERE 1=1   AND dest.InvOrg = '680'   GROUP BY  T_ProductRouting.SeqNo, 
+                                            dest.InvOrg, 
+                                            dest.Model, 
+                                            dest.PCBA, 
+                                            dest.DJ, 
+                                            dest.JobID, 
+                                            dest.TVA,
+                                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END, 
+                                            dest.CurrentProcess, 
+                                            dest.Result, 
+                                            sour.PCBA ORDER BY  dest.Model, dest.PCBA, dest.DJ, dest.JobID, ProdLine, SeqNo, dest.Result DESC
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 10:52:13,565 [12] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ISNULL(T_ProductRouting.SeqNo, 99999) AS SeqNo, 
+                            dest.InvOrg, 
+                            dest.Model, 
+                            dest.PCBA,
+                            dest.TVA, 
+                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END AS ProdLine, 
+                                                     dest.CurrentProcess, 
+                            dest.Result, 
+                            ISNULL(sour.PCBA, '''') AS MBPCBA, 
+                            COUNT(dest.Result) AS Count, 
+                                dest.DJ, dest.JobID
+                    FROM   T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+                         T_WIPHeader AS sour WITH (NOLOCK) ON dest.MotherBoardSN = sour.WIPID LEFT OUTER JOIN
+                         T_ProductRouting WITH (NOLOCK) ON dest.Model = T_ProductRouting.Model AND dest.PCBA = T_ProductRouting.PCBA AND 
+                         dest.CurrentProcess = T_ProductRouting.Process  WHERE 1=1   AND dest.InvOrg = '680'   GROUP BY  T_ProductRouting.SeqNo, 
+                                            dest.InvOrg, 
+                                            dest.Model, 
+                                            dest.PCBA, 
+                                            dest.DJ, 
+                                            dest.JobID, 
+                                            dest.TVA,
+                                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END, 
+                                            dest.CurrentProcess, 
+                                            dest.Result, 
+                                            sour.PCBA) as t
+2020-02-26 10:52:14,379 [12] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 10:52:21,043 [12] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataSummary took 00:00:01.8735571]
+2020-02-26 10:57:30,394 [8] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 10:59:38,474 [9] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 10:59:56,466 [10] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 10:59:58,038 [10] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 10:59:58,137 [10] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 11:00:02,052 [10] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 11:00:03,187 [10] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.7143028]
+2020-02-26 11:08:09,302 [7] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 11:12:26,445 [8] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 11:16:16,187 [7] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 11:16:27,532 [10] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 11:16:28,993 [10] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 11:16:29,088 [10] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 11:16:43,749 [10] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 11:16:47,462 [10] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.6043549]
+2020-02-26 11:31:33,939 [6] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 11:32:52,512 [10] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 11:32:54,017 [10] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 11:32:54,127 [10] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 11:33:36,714 [5] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 11:37:32,797 [13] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 11:37:34,259 [13] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680'  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 11:37:34,375 [13] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' ) as t
+2020-02-26 11:37:37,025 [13] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 11:37:37,094 [13] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.6225219]
+2020-02-26 13:47:21,429 [8] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 13:47:42,263 [9] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWIPTDHeader,arg--key:requestData,value:{"Data":{"Model":"","IntSN":"B0BQ03","Station":"","IsCustomerReport":false,"ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"WIPIn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 13:47:44,047 [9] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT dest.IntSerialNo, dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result, 
+                      dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, (case when ISNULL(sour2.IntSN,'') <> '' THEN sour2.PCBA else '' end) AS MBPCBA, 
+                      sour2.IntSN AS MBIntSN, dest.WIPID, sour.IntSN AS CurIntSN,DATEDIFF(SS, dest.WIPIn, dest.ProdDate) as TestCycleTime
+FROM         T_WIPHeader AS sour WITH (nolock) INNER JOIN
+                      T_WIPTDHeader AS dest WITH (nolock) ON sour.WIPID = dest.WIPID LEFT OUTER JOIN
+                      T_WIPHeader AS sour2 WITH (nolock) ON sour.MotherBoardSN = sour2.WIPID 
+                      WHERE     sour.WIPID IN (SELECT distinct WIPID FROM T_WIPTDHeader WITH (nolock) WHERE (T_WIPTDHeader.IntSerialNo IN ('B0BQ03'))) 
+                                OR sour.WIPID IN (SELECT distinct WIPID FROM T_WIPHeader WITH (nolock) WHERE (T_WIPHeader.IntSN IN ('B0BQ03'))) group by dest.IntSerialNo,dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result,
+                                    dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, sour2.PCBA,sour2.IntSN , dest.WIPID, sour.IntSN ) as t
+2020-02-26 13:47:48,054 [9] DEBUG WebApiApplication - SqlDump Info:SELECT dest.IntSerialNo, dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result, 
+                      dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, (case when ISNULL(sour2.IntSN,'') <> '' THEN sour2.PCBA else '' end) AS MBPCBA, 
+                      sour2.IntSN AS MBIntSN, dest.WIPID, sour.IntSN AS CurIntSN,DATEDIFF(SS, dest.WIPIn, dest.ProdDate) as TestCycleTime
+FROM         T_WIPHeader AS sour WITH (nolock) INNER JOIN
+                      T_WIPTDHeader AS dest WITH (nolock) ON sour.WIPID = dest.WIPID LEFT OUTER JOIN
+                      T_WIPHeader AS sour2 WITH (nolock) ON sour.MotherBoardSN = sour2.WIPID 
+                      WHERE     sour.WIPID IN (SELECT distinct WIPID FROM T_WIPTDHeader WITH (nolock) WHERE (T_WIPTDHeader.IntSerialNo IN ('B0BQ03'))) 
+                                OR sour.WIPID IN (SELECT distinct WIPID FROM T_WIPHeader WITH (nolock) WHERE (T_WIPHeader.IntSN IN ('B0BQ03'))) group by dest.IntSerialNo,dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result,
+                                    dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, sour2.PCBA,sour2.IntSN , dest.WIPID, sour.IntSN  ORDER BY WIPIn
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 13:47:51,746 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 13:47:51,860 [9] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWIPTDHeader took 00:00:06.0844413]
+2020-02-26 13:48:11,803 [8] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWIPTDHeader,arg--key:requestData,value:{"Data":{"Model":"","IntSN":"B0BQ03","Station":"","IsCustomerReport":false,"ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"WIPIn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 13:48:11,804 [8] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT dest.IntSerialNo, dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result, 
+                      dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, (case when ISNULL(sour2.IntSN,'') <> '' THEN sour2.PCBA else '' end) AS MBPCBA, 
+                      sour2.IntSN AS MBIntSN, dest.WIPID, sour.IntSN AS CurIntSN,DATEDIFF(SS, dest.WIPIn, dest.ProdDate) as TestCycleTime
+FROM         T_WIPHeader AS sour WITH (nolock) INNER JOIN
+                      T_WIPTDHeader AS dest WITH (nolock) ON sour.WIPID = dest.WIPID LEFT OUTER JOIN
+                      T_WIPHeader AS sour2 WITH (nolock) ON sour.MotherBoardSN = sour2.WIPID 
+                      WHERE     sour.WIPID IN (SELECT distinct WIPID FROM T_WIPTDHeader WITH (nolock) WHERE (T_WIPTDHeader.IntSerialNo IN ('B0BQ03'))) 
+                                OR sour.WIPID IN (SELECT distinct WIPID FROM T_WIPHeader WITH (nolock) WHERE (T_WIPHeader.IntSN IN ('B0BQ03'))) group by dest.IntSerialNo,dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result,
+                                    dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, sour2.PCBA,sour2.IntSN , dest.WIPID, sour.IntSN ) as t
+2020-02-26 13:48:12,038 [8] DEBUG WebApiApplication - SqlDump Info:SELECT dest.IntSerialNo, dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result, 
+                      dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, (case when ISNULL(sour2.IntSN,'') <> '' THEN sour2.PCBA else '' end) AS MBPCBA, 
+                      sour2.IntSN AS MBIntSN, dest.WIPID, sour.IntSN AS CurIntSN,DATEDIFF(SS, dest.WIPIn, dest.ProdDate) as TestCycleTime
+FROM         T_WIPHeader AS sour WITH (nolock) INNER JOIN
+                      T_WIPTDHeader AS dest WITH (nolock) ON sour.WIPID = dest.WIPID LEFT OUTER JOIN
+                      T_WIPHeader AS sour2 WITH (nolock) ON sour.MotherBoardSN = sour2.WIPID 
+                      WHERE     sour.WIPID IN (SELECT distinct WIPID FROM T_WIPTDHeader WITH (nolock) WHERE (T_WIPTDHeader.IntSerialNo IN ('B0BQ03'))) 
+                                OR sour.WIPID IN (SELECT distinct WIPID FROM T_WIPHeader WITH (nolock) WHERE (T_WIPHeader.IntSN IN ('B0BQ03'))) group by dest.IntSerialNo,dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result,
+                                    dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, sour2.PCBA,sour2.IntSN , dest.WIPID, sour.IntSN  ORDER BY WIPIn
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 13:48:12,288 [8] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 13:48:12,303 [8] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWIPTDHeader took 00:00:00.4836177]
+2020-02-26 13:48:19,095 [11] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWIPTDHeader,arg--key:requestData,value:{"Data":{"Model":"","IntSN":"B0BQ03","Station":"","IsCustomerReport":false,"ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"WIPIn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 13:48:19,095 [11] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT dest.IntSerialNo, dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result, 
+                      dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, (case when ISNULL(sour2.IntSN,'') <> '' THEN sour2.PCBA else '' end) AS MBPCBA, 
+                      sour2.IntSN AS MBIntSN, dest.WIPID, sour.IntSN AS CurIntSN,DATEDIFF(SS, dest.WIPIn, dest.ProdDate) as TestCycleTime
+FROM         T_WIPHeader AS sour WITH (nolock) INNER JOIN
+                      T_WIPTDHeader AS dest WITH (nolock) ON sour.WIPID = dest.WIPID LEFT OUTER JOIN
+                      T_WIPHeader AS sour2 WITH (nolock) ON sour.MotherBoardSN = sour2.WIPID 
+                      WHERE     sour.WIPID IN (SELECT distinct WIPID FROM T_WIPTDHeader WITH (nolock) WHERE (T_WIPTDHeader.IntSerialNo IN ('B0BQ03'))) 
+                                OR sour.WIPID IN (SELECT distinct WIPID FROM T_WIPHeader WITH (nolock) WHERE (T_WIPHeader.IntSN IN ('B0BQ03'))) group by dest.IntSerialNo,dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result,
+                                    dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, sour2.PCBA,sour2.IntSN , dest.WIPID, sour.IntSN ) as t
+2020-02-26 13:48:19,265 [11] DEBUG WebApiApplication - SqlDump Info:SELECT dest.IntSerialNo, dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result, 
+                      dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, (case when ISNULL(sour2.IntSN,'') <> '' THEN sour2.PCBA else '' end) AS MBPCBA, 
+                      sour2.IntSN AS MBIntSN, dest.WIPID, sour.IntSN AS CurIntSN,DATEDIFF(SS, dest.WIPIn, dest.ProdDate) as TestCycleTime
+FROM         T_WIPHeader AS sour WITH (nolock) INNER JOIN
+                      T_WIPTDHeader AS dest WITH (nolock) ON sour.WIPID = dest.WIPID LEFT OUTER JOIN
+                      T_WIPHeader AS sour2 WITH (nolock) ON sour.MotherBoardSN = sour2.WIPID 
+                      WHERE     sour.WIPID IN (SELECT distinct WIPID FROM T_WIPTDHeader WITH (nolock) WHERE (T_WIPTDHeader.IntSerialNo IN ('B0BQ03'))) 
+                                OR sour.WIPID IN (SELECT distinct WIPID FROM T_WIPHeader WITH (nolock) WHERE (T_WIPHeader.IntSN IN ('B0BQ03'))) group by dest.IntSerialNo,dest.ProcessName, dest.SeqNo, dest.PO, dest.Model, dest.PCBA, dest.ProdDate, dest.WIPIn, dest.Result,
+                                    dest.OperatorName, dest.TesterNo, dest.ProgramName, dest.ProgramRevision, dest.IPSNo, dest.IPSRevision, dest.Remark, sour2.PCBA,sour2.IntSN , dest.WIPID, sour.IntSN  ORDER BY WIPIn
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 13:48:19,450 [11] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 13:48:19,460 [11] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWIPTDHeader took 00:00:00.3537025]
+2020-02-26 13:50:03,943 [14] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWIPTestData,arg--key:requestData,value:{"Data":{"Model":"","IntSN":"B0BQ03","Station":"","IsCustomerReport":false,"ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"ProdDate"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 13:50:03,947 [14] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT     T_WIPTDHeader.IntSerialNo, T_WIPTDHeader.Model, T_WIPTDHeader.PCBA, T_WIPTDHeader.ProcessName, T_WIPTDHeader.SeqNo, 
+                      T_WIPTDHeader.ProdDate, T_WIPTDHeader.OperatorName, T_WIPTDHeader.TesterNo, T_WIPTDHeader.ProgramName, 
+                      T_WIPTDHeader.ProgramRevision, T_WIPTDItem.TestStep, T_WIPTDItem.TestName, T_WIPTDItem.Result, T_WIPTDItem.OutputName, 
+                      T_WIPTDItem.InputCondition, T_WIPTDItem.OutputLoading, T_WIPTDItem.LowerLimit, T_WIPTDItem.UpperLimit, T_WIPTDItem.Unit, 
+                      T_WIPTDItem.Status, T_WIPTDItem.IPSReference, T_WIPTDItem.TestID
+FROM         T_WIPTDHeader WITH (NOLOCK) INNER JOIN
+                      T_WIPHeader WITH (NOLOCK) ON T_WIPTDHeader.WIPID = T_WIPHeader.WIPID INNER JOIN
+                      T_WIPTDItem WITH (NOLOCK) ON T_WIPTDHeader.TDID = T_WIPTDItem.TDID where 1=1 and IntSN in ('B0BQ03') ) as t
+2020-02-26 13:50:04,001 [14] DEBUG WebApiApplication - SqlDump Info:SELECT     T_WIPTDHeader.IntSerialNo, T_WIPTDHeader.Model, T_WIPTDHeader.PCBA, T_WIPTDHeader.ProcessName, T_WIPTDHeader.SeqNo, 
+                      T_WIPTDHeader.ProdDate, T_WIPTDHeader.OperatorName, T_WIPTDHeader.TesterNo, T_WIPTDHeader.ProgramName, 
+                      T_WIPTDHeader.ProgramRevision, T_WIPTDItem.TestStep, T_WIPTDItem.TestName, T_WIPTDItem.Result, T_WIPTDItem.OutputName, 
+                      T_WIPTDItem.InputCondition, T_WIPTDItem.OutputLoading, T_WIPTDItem.LowerLimit, T_WIPTDItem.UpperLimit, T_WIPTDItem.Unit, 
+                      T_WIPTDItem.Status, T_WIPTDItem.IPSReference, T_WIPTDItem.TestID
+FROM         T_WIPTDHeader WITH (NOLOCK) INNER JOIN
+                      T_WIPHeader WITH (NOLOCK) ON T_WIPTDHeader.WIPID = T_WIPHeader.WIPID INNER JOIN
+                      T_WIPTDItem WITH (NOLOCK) ON T_WIPTDHeader.TDID = T_WIPTDItem.TDID where 1=1 and IntSN in ('B0BQ03')  ORDER BY ProdDate
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 13:50:04,077 [14] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 13:50:04,211 [14] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWIPTestData took 00:00:00.1323429]
+2020-02-26 14:26:50,864 [7] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 14:27:50,721 [8] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductDatas,arg--key:requestData,value:{"Data":{"Model":"","SaleOrder":"","DiscreteJob":"","DeliveryNote":"","FlatFile":"","SendBy":"","PalletID":"","BoxID":"BCS000059Q","ProductSN":"","TVANo":"","Floor":"","SerialNo2":"","SerialNo3":"","SerialNo4":"","IsTracePreViousSN":false,"CreatedOnFrom":"2020-02-19","CreatedOnTo":"2020-02-26"},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:27:51,230 [8] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CartonID='BCS000059Q' and a.CreatedOn>='2020-02-19 00:00:00' and a.CreatedOn<'2020-02-27 00:00:00') as t
+2020-02-26 14:27:51,291 [8] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CartonID='BCS000059Q' and a.CreatedOn>='2020-02-19 00:00:00' and a.CreatedOn<'2020-02-27 00:00:00' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:27:54,840 [8] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:27:54,906 [8] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductDatas took 00:00:00.5994478]
+2020-02-26 14:28:03,948 [7] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductDatas,arg--key:requestData,value:{"Data":{"Model":"","SaleOrder":"","DiscreteJob":"","DeliveryNote":"","FlatFile":"","SendBy":"","PalletID":"","BoxID":"BCS000059Q","ProductSN":"","TVANo":"","Floor":"","SerialNo2":"","SerialNo3":"","SerialNo4":"","IsTracePreViousSN":false,"CreatedOnFrom":"","CreatedOnTo":""},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:28:03,948 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CartonID='BCS000059Q') as t
+2020-02-26 14:28:03,960 [7] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CartonID='BCS000059Q' ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:28:40,528 [7] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:28:40,541 [7] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductDatas took 00:00:36.5774970]
+2020-02-26 14:28:51,100 [7] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductDatas,arg--key:requestData,value:{"Data":{"Model":"","SaleOrder":"","DiscreteJob":"","DeliveryNote":"","FlatFile":"","SendBy":"","PalletID":"","BoxID":"BCS000059Q","ProductSN":"","TVANo":"","Floor":"","SerialNo2":"","SerialNo3":"","SerialNo4":"","IsTracePreViousSN":false,"CreatedOnFrom":"","CreatedOnTo":""},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:28:51,100 [7] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and a.CartonID='BCS000059Q') as t
+2020-02-26 14:31:46,938 [6] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 14:32:28,537 [5] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductDatas,arg--key:requestData,value:{"Data":{"Model":"","SaleOrder":"","DiscreteJob":"","DeliveryNote":"","FlatFile":"","SendBy":"","PalletID":"","BoxID":"","ProductSN":"5WJNF0BHLB60FV","TVANo":"","Floor":"","SerialNo2":"","SerialNo3":"","SerialNo4":"","IsTracePreViousSN":false,"CreatedOnFrom":"","CreatedOnTo":""},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:32:29,040 [5] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and ProductSerialNo in ('5WJNF0BHLB60FV') ) as t
+2020-02-26 14:33:00,391 [5] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and ProductSerialNo in ('5WJNF0BHLB60FV')  ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:36:35,689 [5] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 14:39:33,643 [20] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductDatas,arg--key:requestData,value:{"Data":{"Model":"","SaleOrder":"","DiscreteJob":"","DeliveryNote":"","FlatFile":"","SendBy":"","PalletID":"","BoxID":"","ProductSN":"5WJNF0BHLB60FV","TVANo":"","Floor":"","SerialNo2":"","SerialNo3":"","SerialNo4":"","IsTracePreViousSN":false,"CreatedOnFrom":"","CreatedOnTo":""},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:39:34,144 [20] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and ProductSerialNo in ('5WJNF0BHLB60FV') ) as t
+2020-02-26 14:39:37,595 [20] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and ProductSerialNo in ('5WJNF0BHLB60FV')  ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:39:52,502 [20] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:39:52,604 [20] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductDatas took 00:00:18.8553748]
+2020-02-26 14:47:40,499 [5] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 14:48:06,747 [9] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductDatas,arg--key:requestData,value:{"Data":{"Model":"","SaleOrder":"","DiscreteJob":"","DeliveryNote":"","FlatFile":"","SendBy":"","PalletID":"","BoxID":"","ProductSN":"5WJNF0BHLB60FV","TVANo":"","Floor":"","SerialNo2":"","SerialNo3":"","SerialNo4":"","IsTracePreViousSN":false,"CreatedOnFrom":"","CreatedOnTo":""},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:48:07,220 [9] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and ProductSerialNo in ('5WJNF0BHLB60FV') ) as t
+2020-02-26 14:48:30,006 [9] DEBUG WebApiApplication - SqlDump Info:SELECT ProductSerialNo, PalletID,CartonID as BoxID,SaleOrder,DeliveryNote,ProdOrder as DiscreteJob,
+     Model, CustomerPN, CustomerRev, SerialNo2,SerialNo3,SerialNo4,FlatFile,
+     SentBy, ProductionLine,CreatedOn, CreatedBy, ChangedOn, ChangedBy ,TVA ,
+    ISNULL((select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.pcba=a.Model),
+    (select top 1 poQTY from t_poqty as c with (nolock) where c.po=a.prodorder and c.model=a.Model and c.pcba='')) as DJQty,b.preSN   
+     FROM T_Shippment as a with(nolock) left OUTER JOIN (select ProductSerialNo as xx,Min(PreSN) as PreSN,Max(RetestDate) as maxdate from T_PreSNs with(nolock) group by ProductSerialNo) b on a.ProductSerialNo = b.xx where 1=1 and ProductSerialNo in ('5WJNF0BHLB60FV')  ORDER BY   Model,ProductSerialNo
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:48:31,185 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:48:31,250 [9] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductDatas took 00:00:24.4312485]
+2020-02-26 14:48:46,297 [11] DEBUG TimingActionFilter - url:http://localhost:51239/api/Resource/GetProductStationATE,arg--key:requestData,value:null
+
+2020-02-26 14:48:46,670 [11] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE') as t
+2020-02-26 14:48:46,677 [11] DEBUG WebApiApplication - SqlDump Info:SELECT Process, Description, ProcessType, Status, TFS, ProdLineType, Equipment, CompTrace, ChangedOn, ChangedBy, Remarks
+FROM T_ProductProcess where 1=1  and ProcessType='ATE' and Status='ACTIVE'
+2020-02-26 14:48:46,691 [11] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:48:46,704 [11] DEBUG TimingActionFilter - [Execution ofResource- GetProductStationATE took 00:00:00.3888964]
+2020-02-26 14:48:52,654 [5] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatas,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:48:52,661 [5] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 14:48:52,678 [5] DEBUG WebApiApplication - SqlDump Info:SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV') ORDER BY a.ProdDate desc
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 14:48:52,705 [5] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:48:52,720 [5] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatas took 00:00:00.0481894]
+2020-02-26 14:49:29,319 [5] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasSummary,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:49:29,323 [5] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 14:49:29,326 [5] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV') 
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:51:17,495 [5] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:51:17,505 [5] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasSummary took 00:01:48.1648611]
+2020-02-26 15:24:12,901 [8] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 15:27:14,491 [6] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 15:28:02,220 [6] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasSummaryArchive,arg--key:requestData,value:{"TableHeaders":[],"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","IntSN":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:28:02,732 [6] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, IntSerialNo, ProcessName, SeqNo, PO, Model, PCBA, ProdDate, WIPIn, Result, OperatorName, TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM V_TDHeader WITH (nolock) where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:28:03,627 [6] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, IntSerialNo, ProcessName, SeqNo, PO, Model, PCBA, ProdDate, WIPIn, Result, OperatorName, TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM V_TDHeader WITH (nolock) where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV') ORDER BY  ProdDate 
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 15:28:08,020 [6] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:28:08,025 [6] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasSummaryArchive took 00:00:05.7964653]
+2020-02-26 15:32:16,786 [6] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 15:36:58,871 [16] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatas,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:37:01,679 [16] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:37:03,043 [16] DEBUG WebApiApplication - SqlDump Info:SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV') ORDER BY a.ProdDate desc
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:37:03,831 [16] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:37:03,895 [16] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatas took 00:00:04.9401274]
+2020-02-26 15:43:58,904 [5] DEBUG TimingActionFilter - url:http://localhost:51239/,arg--
+2020-02-26 15:44:35,935 [5] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatas,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:44:39,191 [5] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:44:39,270 [5] DEBUG WebApiApplication - SqlDump Info:SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV') ORDER BY a.ProdDate desc
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:44:39,302 [5] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:44:39,386 [5] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatas took 00:00:03.3627898]
+2020-02-26 15:44:58,261 [9] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatas,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:45:02,591 [9] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:45:02,596 [9] DEBUG WebApiApplication - SqlDump Info:SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV') ORDER BY a.ProdDate desc
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:45:02,604 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:45:02,613 [9] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatas took 00:00:04.3386885]
+2020-02-26 15:45:18,439 [5] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatas,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:45:18,439 [5] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:45:18,443 [5] DEBUG WebApiApplication - SqlDump Info:SELECT  a.ExtSerialNo,a.ProcessName,a.SeqNo,
+b.TestStep as TestStep,b.TestID,b.TestName,b.InputCondition,a.ProdDate as DateTime,
+b.LowerLimit as LowLimit,b.[Result],b.UpperLimit as Highlimit,b.Unit,a.TesterNo as SystemNo,b.Status from T_TDHeader a with(nolock)
+INNER JOIN T_TDItem b with(nolock)
+on a.TDID=b.TDID 
+INNER JOIN T_Shippment c with(nolock)
+on a.ExtSerialNo=c.ProductSerialNo
+where 1=1  and c.ProductSerialNo in ('5WJNF0BHLB60FV') ORDER BY a.ProdDate desc
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:45:18,454 [5] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:45:18,487 [5] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatas took 00:00:00.0123002]
+2020-02-26 15:45:53,371 [11] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"B0BQ03","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:45:55,064 [11] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('B0BQ03')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:45:55,083 [11] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('B0BQ03') ) as t
+2020-02-26 15:45:55,106 [11] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:45:55,141 [11] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:01.7322821]
+2020-02-26 15:46:05,695 [9] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataDetail,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"B0BQ03","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":20,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:46:05,695 [9] DEBUG WebApiApplication - SqlDump Info:SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('B0BQ03')  ORDER BY  ChangedOn ASC
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:46:05,703 [9] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT   dest.WIPID, 
+                                                    dest.IntSN, 
+                                                    dest.Model, 
+                                                    dest.PCBA, 
+                                                    dest.DJ, 
+                                                    dest.InvOrg, 
+                                                    dest.ProdLine, 
+                                                    dest.CurrentProcess, 
+                                                    dest.Result, 
+                                                    dest.AllPassed, 
+							                        dest.MotherBoardSN, 
+                                                    dest.JobID, 
+                                                    dest.PanelID, 
+                                                    dest.TopBottom, 
+                                                    dest.ChangedOn, 
+                                                    dest.ChangedBy,
+                                                    dest.TVA, 
+                                                    (case when ISNULL(sour.IntSN,'''') <> '''' THEN sour.PCBA else '''' end) AS MBPCBA, 
+                                                    sour.IntSN AS MBIntSN, 
+                                                    Isnull(heatsink.JobID, '''') as LoadedTo
+							                FROM         T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+							                        T_WIPHeader AS sour WITH(NOLOCK) ON dest.MotherBoardSN = sour.WIPID
+							                        LEFT OUTER JOIN T_SFSABatchInput AS heatsink WITH (nolock) ON 
+                                            dest.WIPID = heatsink.ChildSAWIPID AND heatsink.Status = 1  where 1=1 AND dest.InvOrg = '680' AND dest.IntSN IN ('B0BQ03') ) as t
+2020-02-26 15:46:05,713 [9] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:46:05,733 [9] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataDetail took 00:00:00.0168472]
+2020-02-26 15:46:30,787 [5] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportWIPProduct/GetWipStatusDataSummary,arg--key:request,value:{"Data":{"WIPID":null,"ORG":"680","Station":"","Model":"","PCBA":"","DiscreteJob":"","JobID":"","MotherBoardSN":"","IntSN":"B0BQ03","Floor":"","PanelID":"","TVA":"","IsGetDataByMotherBoradSN":false},"Pager":{"CurrentPage":1,"PageSize":10,"Order":"CreatedOn"},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:46:30,793 [5] DEBUG WebApiApplication - SqlDump Info:SELECT ISNULL(T_ProductRouting.SeqNo, 99999) AS SeqNo, 
+                            dest.InvOrg, 
+                            dest.Model, 
+                            dest.PCBA,
+                            dest.TVA, 
+                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END AS ProdLine, 
+                                                     dest.CurrentProcess, 
+                            dest.Result, 
+                            ISNULL(sour.PCBA, '''') AS MBPCBA, 
+                            COUNT(dest.Result) AS Count, 
+                                dest.DJ, dest.JobID
+                    FROM   T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+                         T_WIPHeader AS sour WITH (NOLOCK) ON dest.MotherBoardSN = sour.WIPID LEFT OUTER JOIN
+                         T_ProductRouting WITH (NOLOCK) ON dest.Model = T_ProductRouting.Model AND dest.PCBA = T_ProductRouting.PCBA AND 
+                         dest.CurrentProcess = T_ProductRouting.Process  WHERE 1=1   AND dest.InvOrg = '680' AND dest.IntSN IN ('B0BQ03')   GROUP BY  T_ProductRouting.SeqNo, 
+                                            dest.InvOrg, 
+                                            dest.Model, 
+                                            dest.PCBA, 
+                                            dest.DJ, 
+                                            dest.JobID, 
+                                            dest.TVA,
+                                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END, 
+                                            dest.CurrentProcess, 
+                                            dest.Result, 
+                                            sour.PCBA ORDER BY  dest.Model, dest.PCBA, dest.DJ, dest.JobID, ProdLine, SeqNo, dest.Result DESC
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 15:46:30,814 [5] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ISNULL(T_ProductRouting.SeqNo, 99999) AS SeqNo, 
+                            dest.InvOrg, 
+                            dest.Model, 
+                            dest.PCBA,
+                            dest.TVA, 
+                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END AS ProdLine, 
+                                                     dest.CurrentProcess, 
+                            dest.Result, 
+                            ISNULL(sour.PCBA, '''') AS MBPCBA, 
+                            COUNT(dest.Result) AS Count, 
+                                dest.DJ, dest.JobID
+                    FROM   T_WIPHeader AS dest WITH (nolock) LEFT OUTER JOIN
+                         T_WIPHeader AS sour WITH (NOLOCK) ON dest.MotherBoardSN = sour.WIPID LEFT OUTER JOIN
+                         T_ProductRouting WITH (NOLOCK) ON dest.Model = T_ProductRouting.Model AND dest.PCBA = T_ProductRouting.PCBA AND 
+                         dest.CurrentProcess = T_ProductRouting.Process  WHERE 1=1   AND dest.InvOrg = '680' AND dest.IntSN IN ('B0BQ03')   GROUP BY  T_ProductRouting.SeqNo, 
+                                            dest.InvOrg, 
+                                            dest.Model, 
+                                            dest.PCBA, 
+                                            dest.DJ, 
+                                            dest.JobID, 
+                                            dest.TVA,
+                                            CASE WHEN COALESCE (dest.ProdLine, '''') = '''' THEN '''' ELSE dest.ProdLine END, 
+                                            dest.CurrentProcess, 
+                                            dest.Result, 
+                                            sour.PCBA) as t
+2020-02-26 15:46:30,829 [5] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:46:30,860 [5] DEBUG TimingActionFilter - [Execution ofReportWIPProduct- GetWipStatusDataSummary took 00:00:00.0401994]

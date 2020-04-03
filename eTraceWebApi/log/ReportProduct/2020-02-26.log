@@ -1,0 +1,136 @@
+2020-02-26 14:51:17,513 [5] ERROR ReportProduct - IP:127.0.0.1,hostName:CNAPGZHOL152438.ecp.priv
+System.Exception: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at eTrace.Common.DBHelper.GetList[T](String strSQL, Func`2 GetTypeObject) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Common\DB\DBHelper.cs:line 650
+   at eTrace.Report.SqlServerDAL.V2.Report.ProductDAL.GetProductTestDataSummary(ReportProductTestDataQuery query) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\V2\Report\SFC\ProductDAL.cs:line 519
+   at eTrace.Report.BLL.ProductBLL.GetProductTestDataSummary(ReportProductTestDataQuery query) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.BLL\Business\SFC\ProductBLL.cs:line 46
+   at eTraceWebApi.Controllers.ReportProductController.GetProductTestDatasSummary(ReportGetProductTestDatasRequest requestData) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\Controllers\Reports\ReportProductController.cs:line 105
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2020-02-26 14:54:22,554 [22] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasSummary,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 14:54:22,555 [22] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 14:54:22,559 [22] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV') 
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 14:54:42,222 [22] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 14:54:42,233 [22] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasSummary took 00:00:19.6663973]
+2020-02-26 14:54:42,235 [22] ERROR ReportProduct - IP:127.0.0.1,hostName:CNAPGZHOL152438.ecp.priv
+System.Exception: Incorrect syntax near 'OFFSET'.
+Invalid usage of the option NEXT in the FETCH statement.
+   at eTrace.Common.DBHelper.GetList[T](String strSQL, Func`2 GetTypeObject) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.Common\DB\DBHelper.cs:line 650
+   at eTrace.Report.SqlServerDAL.V2.Report.ProductDAL.GetProductTestDataSummary(ReportProductTestDataQuery query) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.SqlServerDAL\V2\Report\SFC\ProductDAL.cs:line 519
+   at eTrace.Report.BLL.ProductBLL.GetProductTestDataSummary(ReportProductTestDataQuery query) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.BLL\Business\SFC\ProductBLL.cs:line 46
+   at eTraceWebApi.Controllers.ReportProductController.GetProductTestDatasSummary(ReportGetProductTestDatasRequest requestData) in C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\Controllers\Reports\ReportProductController.cs:line 105
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2020-02-26 14:54:45,004 [17] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasSummary,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:00:12,824 [17] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:00:12,829 [17] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV') ORDER BY T_TDHeader.WIPIN
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 15:00:12,854 [17] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:00:12,867 [17] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasSummary took 00:05:27.8523218]
+2020-02-26 15:01:32,142 [34] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasSummary,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","CartonId":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:01:45,713 [34] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:01:50,649 [34] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, CartonID, IntSerialNo, ProcessName, 
+                                                    SeqNo, PO, T_TDHeader.Model, PCBA, ProdDate, WIPIn, Result, OperatorName, 
+                                        TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM T_TDHeader WITH (nolock) 
+                                        inner join T_Shippment with (nolock) on T_TDHeader.ExtSerialNo = T_Shippment.ProductSerialNo where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV') ORDER BY T_TDHeader.ExtSerialNo, T_TDHeader.WIPIN
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 15:01:56,343 [34] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:01:56,362 [34] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasSummary took 00:00:24.1994216]
+2020-02-26 15:02:22,970 [30] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasArchive,arg--key:requestData,value:{"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","IntSN":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":20,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:02:23,421 [30] DEBUG WebApiApplication - SqlDump Info:SELECT     V_TDItem.TestStep,V_TDItem.TestID, V_TDItem.TestName,V_TDHeader.ProdDate AS Datetime,V_TDItem.Result,V_TDItem.LowerLimit AS Lowlimit,
+					 V_TDItem.UpperLimit AS Highlimit, V_TDItem.Unit, V_TDHeader.TesterNo AS SystemNo,V_TDHeader.ExtSerialNo,V_TDItem.Status, V_TDHeader.SeqNo,
+					  V_TDItem.InputCondition, V_TDHeader.ProcessName
+	     
+					FROM            V_TDHeader WITH (nolock) INNER JOIN
+                         V_TDItem WITH (nolock) ON V_TDHeader.TDID = V_TDItem.TDID
+					WHERE 1=1  and V_TDHeader.ExtSerialNo in ('5WJNF0BHLB60FV')   ORDER BY V_TDHeader.ExtSerialNo, Datetime, V_TDHeader.SeqNo, CONVERT(int, V_TDItem.TestStep), V_TDItem.TestID
+                      OFFSET 0 ROWS
+                FETCH NEXT 20 ROWS ONLY 
+2020-02-26 15:02:24,899 [30] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT     V_TDItem.TestStep,V_TDItem.TestID, V_TDItem.TestName,V_TDHeader.ProdDate AS Datetime,V_TDItem.Result,V_TDItem.LowerLimit AS Lowlimit,
+					 V_TDItem.UpperLimit AS Highlimit, V_TDItem.Unit, V_TDHeader.TesterNo AS SystemNo,V_TDHeader.ExtSerialNo,V_TDItem.Status, V_TDHeader.SeqNo,
+					  V_TDItem.InputCondition, V_TDHeader.ProcessName
+	     
+					FROM            V_TDHeader WITH (nolock) INNER JOIN
+                         V_TDItem WITH (nolock) ON V_TDHeader.TDID = V_TDItem.TDID
+					WHERE 1=1  and V_TDHeader.ExtSerialNo in ('5WJNF0BHLB60FV')  ) as t
+2020-02-26 15:02:25,700 [30] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:02:25,709 [30] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasArchive took 00:00:02.7245230]
+2020-02-26 15:02:29,963 [34] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportProduct/GetProductTestDatasSummaryArchive,arg--key:requestData,value:{"TableHeaders":[],"Data":{"Model":"","TestId":"","ProductSN":"5WJNF0BHLB60FV","Station":"","TestStep":"","IntSN":"","IsCustomerReport":false,"DJ":"","ProductTimeStart":null,"ProductTimeEnd":null},"Pager":{"CurrentPage":1,"PageSize":10,"Order":null},"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-02-26 15:02:29,966 [34] DEBUG WebApiApplication - SqlDump Info:select count(1) from (SELECT ExtSerialNo, IntSerialNo, ProcessName, SeqNo, PO, Model, PCBA, ProdDate, WIPIn, Result, OperatorName, TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM V_TDHeader WITH (nolock) where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV')) as t
+2020-02-26 15:02:30,651 [34] DEBUG WebApiApplication - SqlDump Info:SELECT ExtSerialNo, IntSerialNo, ProcessName, SeqNo, PO, Model, PCBA, ProdDate, WIPIn, Result, OperatorName, TesterNo, ProgramName, ProgramRevision, IPSNo, IPSRevision, Remark FROM V_TDHeader WITH (nolock) where 1=1  and ExtSerialNo in ('5WJNF0BHLB60FV') ORDER BY  ProdDate 
+                      OFFSET 0 ROWS
+                FETCH NEXT 10 ROWS ONLY 
+2020-02-26 15:02:35,180 [34] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-02-26 15:02:35,188 [34] DEBUG TimingActionFilter - [Execution ofReportProduct- GetProductTestDatasSummaryArchive took 00:00:05.2123740]

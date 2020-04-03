@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FBA224C-714F-4138-8490-61945063C3AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eTrace.Report.BLL</RootNamespace>
+    <AssemblyName>eTrace.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\EPM\EPMEventBLL.cs" />
+    <Compile Include="Business\EPM\MobileEquipmentBLL.cs" />
+    <Compile Include="Business\EPM\SMFeederBLL.cs" />
+    <Compile Include="Business\EPM\SMFixtureVerificationBLL.cs" />
+    <Compile Include="Business\EPM\SMMSDBLL.cs" />
+    <Compile Include="Business\EPM\SMSBLL.cs" />
+    <Compile Include="Business\EPM\SMSolderPasteGlueBLL.cs" />
+    <Compile Include="Business\EPM\SMFixtureTransBLL.cs" />
+    <Compile Include="Business\EPM\SMJobDataRecordsBLL.cs" />
+    <Compile Include="Business\EPM\SMPIBLL.cs" />
+    <Compile Include="Business\EPM\SMFixtureInspHeaderBLL.cs" />
+    <Compile Include="Business\EPM\SMInspSpecBLL.cs" />
+    <Compile Include="Business\EPM\SMMatInvBLL.cs" />
+    <Compile Include="Business\EPM\SMMaterialBLL.cs" />
+    <Compile Include="Business\EPM\SMMatTransBLL.cs" />
+    <Compile Include="Business\EPM\SMLocBLL.cs" />
+    <Compile Include="Business\EPM\EquipmentPMSpecBLL.cs" />
+    <Compile Include="Business\EPM\EquipmentPMPlanBLL.cs" />
+    <Compile Include="Business\EPM\EquipmentRepairHeaderBLL.cs" />
+    <Compile Include="Business\EPM\EquipmentFixturePMHeaderBLL.cs" />
+    <Compile Include="Business\EPM\EquipmentBLL.cs" />
+    <Compile Include="Business\EPM\FixtureBLL.cs" />
+    <Compile Include="Business\EPM\FixtureCategoryBLL.cs" />
+    <Compile Include="Business\Quality\SMTQCDataBLL.cs" />
+    <Compile Include="Business\Quality\UploadCiscoDataBLL.cs" />
+    <Compile Include="Business\Quality\WIPUnitByDJBLL.cs" />
+    <Compile Include="Business\Quality\WIPUnitBySNBLL.cs" />
+    <Compile Include="Business\ReportFeedBackBLL.cs" />
+    <Compile Include="Business\SFC\ProductArchiveBLL.cs" />
+    <Compile Include="Business\SFC\ProductBLL.cs" />
+    <Compile Include="Business\ResourceBLL.cs" />
+    <Compile Include="Business\SFC\RepairBLL.cs" />
+    <Compile Include="Business\SFC\ProductErrorLogBLL.cs" />
+    <Compile Include="Business\SFC\WIPProductBLL.cs" />
+    <Compile Include="Business\WM\SOShipmentBLL.cs" />
+    <Compile Include="Business\WM\RawMatPakStatusBLL.cs" />
+    <Compile Include="Business\WM\ComponentsUsedBLL.cs" />
+    <Compile Include="Business\WM\eJITBuildPlanBLL.cs" />
+    <Compile Include="Business\WM\FGAgingBLL.cs" />
+    <Compile Include="Business\WM\InvOptimizationBLL.cs" />
+    <Compile Include="Business\WM\IPPExceptionBLL.cs" />
+    <Compile Include="Business\WM\iProAMLvseTraceBLL.cs" />
+    <Compile Include="Business\WM\LabelInfoBLL.cs" />
+    <Compile Include="Business\WM\AutoeJITPlanBLL.cs" />
+    <Compile Include="Business\WM\eJITFrequencyBLL.cs" />
+    <Compile Include="Business\WM\OnHandCompBLL.cs" />
+    <Compile Include="Business\WM\PickOrderBLL.cs" />
+    <Compile Include="Business\WM\RawMatPackingBLL.cs" />
+    <Compile Include="Business\WM\SearchCLIDBLL.cs" />
+    <Compile Include="Common\eTraceBLLBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTrace.Common\eTrace.Common.csproj">
+      <Project>{3b07dbfc-7786-42b9-9081-66c4f2c2ae70}</Project>
+      <Name>eTrace.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.Core\eTrace.Core.csproj">
+      <Project>{a69a58d2-69cc-4a23-b595-788bae882ce0}</Project>
+      <Name>eTrace.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.IBLL\eTrace.Report.IBLL.csproj">
+      <Project>{b922e900-65fb-4bb1-a37f-e50effce2f05}</Project>
+      <Name>eTrace.Report.IBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.IDAL\eTrace.Report.IDAL.csproj">
+      <Project>{25e934db-ebda-4919-8b31-c99a10fc345e}</Project>
+      <Name>eTrace.Report.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eTrace.Model\eTrace.Model.csproj">
+      <Project>{35fa3bdf-61c8-47d7-9f34-13b2cc2b00cf}</Project>
+      <Name>eTrace.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

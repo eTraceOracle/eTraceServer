@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eTrace.Model</RootNamespace>
+    <AssemblyName>eTrace.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\eTrace.Model.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\ModelQueryBase.cs" />
+    <Compile Include="SDKCode\BussinesCodeManager.cs" />
+    <Compile Include="SDKCode\EmBussinesCodeType.cs" />
+    <Compile Include="SDKCode\EmETraceType.cs" />
+    <Compile Include="SDKCode\EmLanguageType.cs" />
+    <Compile Include="SDKCode\EmOrderType.cs" />
+    <Compile Include="SDKCode\KeyValueModel.cs" />
+    <Compile Include="V2\Report\EPM\FixtureCategoryModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportEPMEventModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportMobileEquipmentModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMFeederModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMFixtureVerificationModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMMSDModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMSModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMSolderPasteGlueModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMFixtureTransModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMJobDataRecordsModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMPIModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMFixtureInspHeaderModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMInspSpecModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMMatInvModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMMaterialModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMMatTransModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportSMLocModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportEquipmentPMSpecModel.cs" />
+    <Compile Include="V2\Report\ProductStationModel.cs" />
+    <Compile Include="V2\Report\Quality\ReportSMTQCDataModel.cs" />
+    <Compile Include="V2\Report\Quality\ReportUploadCiscoDataModel.cs" />
+    <Compile Include="V2\Report\Quality\ReportWIPUnitByDJModel.cs" />
+    <Compile Include="V2\Report\Quality\ReportWIPUnitBySNModel.cs" />
+    <Compile Include="V2\Report\ReportFeedbackModel.cs" />
+    <Compile Include="V2\Report\SFC\DailyRepairList\GetWipOutModel.cs" />
+    <Compile Include="V2\Report\SFC\DailyRepairList\GetMoreThanOneModel.cs" />
+    <Compile Include="V2\Report\SFC\DailyRepairList\GetTopTenComonentModel.cs" />
+    <Compile Include="V2\Report\SFC\DailyRepairList\GetWipInWipOutModel.cs" />
+    <Compile Include="V2\Report\SFC\DailyRepairList\RequestItem.cs" />
+    <Compile Include="V2\Report\SFC\ReportProductArchiveDataModel.cs" />
+    <Compile Include="V2\Report\SFC\ReportProductTestDataArchiveModel.cs" />
+    <Compile Include="V2\Report\SFC\WipStatuasModel.cs" />
+    <Compile Include="V2\Report\SFC\GetProductErrorLogModel.cs" />
+    <Compile Include="V2\Report\SFC\GetListOfRepairDataModel.cs" />
+    <Compile Include="V2\Report\SFC\ReportProductDataModel.cs" />
+    <Compile Include="V2\Report\SFC\ReportWIPTestDataModel.cs" />
+    <Compile Include="V2\Report\SFC\ReportProductTestDataModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportEquipmentPMPlanModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportEquipmentRepairHeaderModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportEquipmentFixturePMHeaderModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportEquipmentModel.cs" />
+    <Compile Include="V2\Report\EPM\ReportFixtureModel.cs" />
+    <Compile Include="V2\Report\ReportTDHeaderModel.cs" />
+    <Compile Include="V2\Report\SFC\WipModules.cs" />
+    <Compile Include="V2\Report\SFC\GetWipLockDataModel.cs" />
+    <Compile Include="V2\Report\SFC\ReportGetWIPInfo.cs" />
+    <Compile Include="V2\Report\SFC\ReportWIPProductModel.cs" />
+    <Compile Include="V2\Report\WM\ReportSOShipmentModel.cs" />
+    <Compile Include="V2\Report\WM\ReportFGAgingModel.cs" />
+    <Compile Include="V2\Report\WM\ReportRawMatPackingModel.cs" />
+    <Compile Include="V2\Report\WM\ReportRawMatPakStatusModel.cs" />
+    <Compile Include="V2\Report\WM\ReportPickOrderModel.cs" />
+    <Compile Include="V2\Report\WM\ReportComponentsUsedModel.cs" />
+    <Compile Include="V2\Report\WM\ReporteJITBuildPlanModel.cs" />
+    <Compile Include="V2\Report\WM\ReportInvOptimizationModel.cs" />
+    <Compile Include="V2\Report\WM\ReportIPPExceptionModel.cs" />
+    <Compile Include="V2\Report\WM\ReportiProAMLvseTraceModel.cs" />
+    <Compile Include="V2\Report\WM\ReportLabelInfoModel.cs" />
+    <Compile Include="V2\Report\WM\ReportAutoeJITPlanModel.cs" />
+    <Compile Include="V2\Report\WM\ReporteJITFrequencyModel.cs" />
+    <Compile Include="V2\Report\WM\ReportOnHandCompModel.cs" />
+    <Compile Include="V2\Report\WM\ReportSearchCLIDModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="V1\" />
+    <Folder Include="V2\Report\Product\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

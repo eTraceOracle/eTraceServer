@@ -1,0 +1,104 @@
+2020-03-03 14:34:47,673 [30] ERROR ReportInvOptimization - IP:127.0.0.1,hostName:CNAPGZHOL152438.ecp.priv
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__17`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2020-03-03 14:34:47,673 [28] ERROR ReportInvOptimization - IP:127.0.0.1,hostName:CNAPGZHOL152438.ecp.priv
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__17`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2020-03-03 14:34:47,673 [33] ERROR ReportInvOptimization - IP:127.0.0.1,hostName:CNAPGZHOL152438.ecp.priv
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__17`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2020-03-03 14:34:47,829 [30] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/08","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/10","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-03 14:34:47,866 [28] ERROR ReportInvOptimization - IP:127.0.0.1,hostName:CNAPGZHOL152438.ecp.priv
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__17`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__12.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+2020-03-03 14:35:14,791 [21] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 14:35:14,963 [21] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:24:31.2950088]
+2020-03-03 14:35:18,237 [11] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 14:35:18,241 [11] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:28:04.6935560]
+2020-03-03 14:38:11,945 [36] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/08","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/10","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-03 14:40:10,185 [30] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 14:40:10,192 [30] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:05:22.2864978]
+2020-03-03 14:40:20,426 [45] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/03","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/10","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-03 14:42:20,733 [31] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/03","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/10","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-03 14:48:23,132 [36] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 14:48:23,134 [36] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:10:11.1380094]
+2020-03-03 14:48:46,002 [36] DEBUG TimingActionFilter - url:http://localhost:51239/api/ReportInvOptimization/DownloadInvOptimizationData,arg--key:requestData,value:{"TableHeaders":[{"HeaderOrder":0,"ColumnName":"OrgCode","HeaderLabel":"Org"},{"HeaderOrder":1,"ColumnName":"ShortagePN","HeaderLabel":"ShortagePN"},{"HeaderOrder":2,"ColumnName":"ShPNDesc","HeaderLabel":"ShPNDesc"},{"HeaderOrder":3,"ColumnName":"ShPNCost","HeaderLabel":"ShPNCost"},{"HeaderOrder":4,"ColumnName":"ShPNBuyer","HeaderLabel":"ShPNBuyer"},{"HeaderOrder":5,"ColumnName":"Shortage","HeaderLabel":"Shortage"},{"HeaderOrder":6,"ColumnName":"MFR","HeaderLabel":"MFR"},{"HeaderOrder":7,"ColumnName":"MPN","HeaderLabel":"MPN"},{"HeaderOrder":8,"ColumnName":"AMLStatus","HeaderLabel":"AMLStatus"},{"HeaderOrder":9,"ColumnName":"ExcessPN","HeaderLabel":"ExcessPN"},{"HeaderOrder":10,"ColumnName":"ExPNDesc","HeaderLabel":"ExPNDesc"},{"HeaderOrder":11,"ColumnName":"ExPNCost","HeaderLabel":"ExPNCost"},{"HeaderOrder":12,"ColumnName":"ExPNBuyer","HeaderLabel":"ExPNBuyer"},{"HeaderOrder":13,"ColumnName":"ExPNMPQ","HeaderLabel":"ExPNMPQ"},{"HeaderOrder":14,"ColumnName":"SubInventory","HeaderLabel":"SubInventory"},{"HeaderOrder":15,"ColumnName":"Locator","HeaderLabel":"Locator"},{"HeaderOrder":16,"ColumnName":"ExpDate","HeaderLabel":"ExpDate"},{"HeaderOrder":17,"ColumnName":"RTLot","HeaderLabel":"RTLot"},{"HeaderOrder":18,"ColumnName":"OnhandQty","HeaderLabel":"OnhandQty"},{"HeaderOrder":19,"ColumnName":"ExcessQty","HeaderLabel":"ExcessQty"},{"HeaderOrder":20,"ColumnName":"AllocatedQty","HeaderLabel":"AllocatedQty"},{"HeaderOrder":21,"ColumnName":"AvlQty","HeaderLabel":"AvlQty"},{"HeaderOrder":22,"ColumnName":"TransferQty","HeaderLabel":"TransferQty"},{"HeaderOrder":23,"ColumnName":"InTransit","HeaderLabel":"InTransit"}],"Data":{"OrgCode":"680","ShortageItems":"","DmdCutDate_Shortage":"2020/03/11","POCutDate_Shortage":"","SafetyStock":false,"DmdCutDate_Excess":"2020/03/10","POCutDate_Excess":""},"Pager":null,"ClientToken":null,"Version":null,"ClientTime":"0001-01-01T00:00:00","eTraceType":0,"LanguageType":0}
+
+2020-03-03 14:50:52,080 [45] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 14:50:52,083 [45] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:10:31.6089617]
+2020-03-03 14:55:58,994 [31] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 14:55:58,996 [31] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:13:38.2736480]
+2020-03-03 15:00:46,602 [36] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel
+2020-03-03 15:00:46,605 [36] DEBUG TimingActionFilter - [Execution ofReportInvOptimization- DownloadInvOptimizationData took 00:12:00.6583045]

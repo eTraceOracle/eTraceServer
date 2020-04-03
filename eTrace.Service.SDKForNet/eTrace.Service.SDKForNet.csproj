@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eTrace.Service.SDKForNet</RootNamespace>
+    <AssemblyName>eTrace.Service.SDKForNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\Reports\Common\SendReportAdviceMailRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportEPMEventRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportMobileEquipmentRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMFeederRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMFixtureVerificationRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMMSDRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMSolderPasteGlueRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMFixtureTransRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMJobDataRecordsRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMPIRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMFixtureInspHeaderRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMInspSpecRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMMatInvRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMMaterialRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMMatTransRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMLocRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportEquipmentPMSpecRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportEquipmentPMPlanRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportEquipmentRepairHeaderRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportEquipmentFixturePMHeaderRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportEquipmentRequest.cs" />
+    <Compile Include="Request\Reports\EPM\ReportSMSRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportSMTQCDataRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportUploadCiscoDataRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportWIPUnitByDJRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportWIPUnitBySNRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportYieldReportByDJRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportYieldReportDailyRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportYieldReportFPYRequest.cs" />
+    <Compile Include="Request\Reports\Quality\ReportYieldReportWeeklyRequest.cs" />
+    <Compile Include="Request\Reports\ReportDownloadRequestBase.cs" />
+    <Compile Include="Request\Reports\EPM\ReportFixtureRequest.cs" />
+    <Compile Include="Request\Reports\SFC\ReportProductDataArchiveRequest.cs" />
+    <Compile Include="Request\Reports\SFC\ReportProductDataRequest.cs" />
+    <Compile Include="Request\Reports\ReportTDHeaderRequest.cs" />
+    <Compile Include="Request\Reports\SFC\DownloadDailyRepairListRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetMoreThanOneRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetWipStatusDataRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetWipOutRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetTopTenComonentRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetWipInWipOutRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetProductionErrorLogRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetSMTAOIDataRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetWIPInfoRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetListOfRepairDataRequest.cs" />
+    <Compile Include="Request\Reports\SFC\GetWipLockDataRequest.cs" />
+    <Compile Include="Request\Reports\SFC\ProductStationRequest.cs" />
+    <Compile Include="Request\Reports\SFC\ReportProductTestDatasArchiveRequest.cs" />
+    <Compile Include="Request\Reports\SFC\ReportProductTestDatasRequest.cs" />
+    <Compile Include="Request\Reports\SFC\ReportWIPDataRequest.cs" />
+    <Compile Include="Request\Reports\SFC\WIPUnitFlowRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportSOShipmentRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportFGAgingRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportRawMatPakStatusRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportRawMatPackingRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportPickOrderRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportComponentsUsedRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReporteJITBuildPlanRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportInvOptimizationRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportIPPExceptionRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportiProAMLvseTraceRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportLabelInfoRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportAutoeJITPlanRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReporteJITFrequencyRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportOnHandCompRequest.cs" />
+    <Compile Include="Request\Reports\WM\ReportSearchCLIDRequest.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEPMEventResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportMobileEquipmentResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMFeederResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMFixtureVerificationResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMMSDResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMSolderPasteGlueResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMFixtureTransResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMJobDataRecordsResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMPIResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMFixtureInspHeaderResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMInspSpecResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMMatInvResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMMaterialResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMMatTransResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMLocResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEquipmentPMSpecResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportSMSResponse.cs" />
+    <Compile Include="Response\Reports\ProductStationResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReoportFixtureResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEquipmentFixturePMDetailResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEquipmentPMPlanResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEquipmentRepairHeaderResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEquipmentFixturePMHeaderResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportEquipmentResponse.cs" />
+    <Compile Include="Response\Reports\EPM\ReportFixtureCatResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportSMTQCDataResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportUploadCiscoDataResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportWIPUnitByDJResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportWIPUnitBySNResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportYieldReportByDJResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportYieldReportDailyResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportYieldReportFPYResponse.cs" />
+    <Compile Include="Response\Reports\Quality\ReportYieldReportWeeklyResponse.cs" />
+    <Compile Include="Response\Reports\ReportCheckRowsCountResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportProductDataArchiveResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportProductDataResponse.cs" />
+    <Compile Include="Response\Reports\ReportTDHeaderResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetMoreThanOneResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetWipStatusDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetTopTenComonentResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetWipOutDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetWipInWipOutDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetProductErrorLogResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetSMTAOIDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetWIPInfoResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetListOfRepairDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\GetWipLockDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportProductTestDataArchiveResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportProductTestDataSummaryArchiveResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportProductTestDataSummaryResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportWIPPropertiesResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportWIPTDHeaderResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportWIPTestDataResponse.cs" />
+    <Compile Include="Response\Reports\SFC\ReportWIPTestDataSummaryResponse.cs" />
+    <Compile Include="Response\Reports\SFC\WIPUnitFlowResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportSOShipmentResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportFGAgingResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportRawMatPackingResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportRawMatPakStatusResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportPickOrderResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportComponentsUsedResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReporteJITBuildPlanResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportInvOptimizationResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportIPPExceptionResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportiProAMLvseTraceResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportLabelInfoResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportAutoeJITPlanResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReporteJITFrequencyResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportOnHandCompResponse.cs" />
+    <Compile Include="Response\Reports\WM\ReportSearchCLIDResponse.cs" />
+    <Compile Include="ServerRequestBase.cs" />
+    <Compile Include="Response\Reports\SFC\ReportProductTestDataResponse.cs" />
+    <Compile Include="ServerResponseBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Request\Reports\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTrace.Model\eTrace.Model.csproj">
+      <Project>{35fa3bdf-61c8-47d7-9f34-13b2cc2b00cf}</Project>
+      <Name>eTrace.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

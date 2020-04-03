@@ -1,0 +1,177 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\log4net.config
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTraceWebApi.dll.config
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTraceWebApi.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTraceWebApi.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Antlr3.Runtime.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.BLL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Common.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Core.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IBLL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Service.SDKForNet.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\log4net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Swashbuckle.Core.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Cors.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Helpers.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.Cors.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.WebHost.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Optimization.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\WebActivatorEx.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.OOXML.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.SqlServerDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.OpenXml4Net.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.OpenXmlFormats.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.BLL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Common.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Core.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IBLL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Service.SDKForNet.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\log4net.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Net.Http.Formatting.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.Cors.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.WebHost.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Helpers.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Optimization.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Antlr3.Runtime.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.SqlServerDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\ICSharpCode.SharpZipLib.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\RptQualityData.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\RptQualityData.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\RptQualityData.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\log4net.config
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTraceWebApi.dll.config
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTraceWebApi.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTraceWebApi.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Antlr3.Runtime.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.BLL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Common.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Core.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IBLL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Service.SDKForNet.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\log4net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\RptQualityData.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Swashbuckle.Core.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Net.Http.Formatting.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Cors.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Helpers.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.Cors.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.WebHost.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Optimization.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\WebActivatorEx.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.OOXML.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.SqlServerDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.OpenXml4Net.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\NPOI.OpenXmlFormats.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\ICSharpCode.SharpZipLib.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.BLL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Common.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Core.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IBLL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.Service.SDKForNet.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\RptQualityData.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\RptQualityData.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\log4net.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Net.Http.Formatting.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.Cors.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Http.WebHost.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Helpers.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.Optimization.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\Antlr3.Runtime.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.IDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\eTrace.SqlServerDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\ICSharpCode.SharpZipLib.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\log4net.config
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTraceWebApi.dll.config
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTraceWebApi.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTraceWebApi.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Antlr3.Runtime.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.BLL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Common.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Core.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.IBLL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Service.SDKForNet.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\log4net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Microsoft.Web.Infrastructure.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\RptQualityData.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Swashbuckle.Core.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Net.Http.Formatting.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Cors.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Helpers.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Http.Cors.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Http.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Http.WebHost.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Optimization.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\WebActivatorEx.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.IDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\NPOI.OOXML.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\NPOI.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.SqlServerDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\NPOI.OpenXml4Net.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\NPOI.OpenXmlFormats.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\ICSharpCode.SharpZipLib.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.Deployment.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.BLL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Common.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Core.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.IBLL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.Service.SDKForNet.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\RptQualityData.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\RptQualityData.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\log4net.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Newtonsoft.Json.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Net.Http.Formatting.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Http.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Http.Cors.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Http.WebHost.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Helpers.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.Optimization.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\Antlr3.Runtime.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.IDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\eTrace.SqlServerDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\ICSharpCode.SharpZipLib.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\bin\System.Web.WebPages.Deployment.xml
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTraceWebApi\obj\Release\eTraceWebApi.pdb

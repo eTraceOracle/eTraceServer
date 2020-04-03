@@ -1,0 +1,21 @@
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.IDAL.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.Model.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.Model.pdb
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Release\eTrace.Report.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Release\eTrace.IDAL.dll
+C:\Users\shihonglin\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Release\eTrace.IDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.IDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.IDAL.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.Model.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\bin\Release\eTrace.Model.pdb
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Release\eTrace.Report.IDAL.csprojResolveAssemblyReference.cache
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Release\eTrace.IDAL.dll
+D:\My Documents\Source\Workspaces\eTrace(Oracle)\Web\04Source\Trunk\eTraceServer\eTrace.IDAL\obj\Release\eTrace.IDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\bin\Release\eTrace.IDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\bin\Release\eTrace.IDAL.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\bin\Release\eTrace.Model.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\bin\Release\eTrace.Model.pdb
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\obj\Release\eTrace.Report.IDAL.csprojResolveAssemblyReference.cache
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\obj\Release\eTrace.IDAL.dll
+D:\Visual Studio 2013\Projects\eTraceServer\eTraceServer\eTrace.IDAL\obj\Release\eTrace.IDAL.pdb

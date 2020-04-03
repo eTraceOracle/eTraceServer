@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>eTrace.Model</name>
+    </assembly>
+    <members>
+        <member name="T:eTrace.Model.ModelQueryBase`1">
+            <summary>
+            可变data类型
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:eTrace.Model.ModelQueryBase`1.Data">
+            <summary>
+            item Data of Query
+            </summary>
+        </member>
+        <member name="F:eTrace.Model.EmBussinesCodeType.ReportOverMaxRowsCount">
+            <summary>
+            over max row count limit when download report
+            </summary>
+        </member>
+        <member name="F:eTrace.Model.EmBussinesCodeType.DJNotFound">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:eTrace.Model.V2.Report.ReportFeedbackModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.ReportFeedbackModel.Like">
+            <summary>
+            Do you like this new version?
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.ReportFeedbackModel.Convenient">
+            <summary>
+            Is it convenient to use?
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.ReportFeedbackModel.Performance">
+            <summary>
+            Is the performance better than previous version?
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.ReportFeedbackModel.BackToOldVersion">
+            <summary>
+            if user back to old version
+            </summary>
+        </member>
+        <member name="T:eTrace.Model.V2.Report.DailyRepairList.RequestItem">
+            <summary>
+            public RequestItem for DailyRepairList Interface
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.WipStatusSummaryModel.SummaryCount">
+            <summary>
+            Summary Count
+            </summary>
+        </member>
+        <member name="T:eTrace.Model.V2.Report.WipStatusDetailItem">
+            <summary>
+            Data model of each item
+            one field of report corresponds to one proerty
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.ORG">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.Station">
+            <summary>
+            Station
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.Model">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.PCBA">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.DiscreteJob">
+            <summary>
+            产品型号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.JobID">
+            <summary>
+            板型号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipStatusQuery.Item.IsGetDataByMotherBoradSN">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetProductErrorLogQuery.Item.ErrorDateFrom">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetProductErrorLogQuery.Item.ErrorDateTo">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetProductErrorLogQuery.Item.DiscreteJob">
+            <summary>
+            工单
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetProductErrorLogQuery.Item.Module">
+            <summary>
+            模块
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetProductErrorLogQuery.Item.Model">
+            <summary>
+            产品型号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetProductErrorLogQuery.Item.PCBA">
+            <summary>
+            板型号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.FailTimeFrom">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.FailTimeTo">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.RepairDateFrom">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.RepairDateTo">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.FATimeFrom">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.FATimeTo">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.ChangeOnFrom">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.ChangeOnTo">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.Model">
+            <summary>
+            产品型号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.Floor">
+            <summary>
+            楼层
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.ExtSN">
+            <summary>
+            外部序列号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetListOfRepairDataQuery.Item.IntSN">
+            <summary>
+            内部序列号
+            </summary>
+        </member>
+        <member name="T:eTrace.Model.V2.Report.PossibleMaterialInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipLockDataModelQuery.Item.StartTime">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipLockDataModelQuery.Item.EndTime">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipLockDataModelQuery.Item.ProdLine">
+            <summary>
+            产线
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipLockDataModelQuery.Item.Process">
+            <summary>
+            工序
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipLockDataModelQuery.Item.Model">
+            <summary>
+            产品型号
+            </summary>
+        </member>
+        <member name="P:eTrace.Model.V2.Report.GetWipLockDataModelQuery.Item.PCBA">
+            <summary>
+            板型号
+            </summary>
+        </member>
+        <member name="T:eTrace.Model.V2.Report.WipInfo">
+            <summary>
+            Contain All Wip data in this Model
+            </summary>
+        </member>
+    </members>
+</doc>

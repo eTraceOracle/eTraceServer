@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25E934DB-EBDA-4919-8B31-C99A10FC345E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eTrace.Report.IDAL</RootNamespace>
+    <AssemblyName>eTrace.IDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EPM\IEPMEventDAL.cs" />
+    <Compile Include="EPM\IMobileEquipmentDAL.cs" />
+    <Compile Include="EPM\ISMFeederDAL.cs" />
+    <Compile Include="EPM\ISMFixtureVerificationDAL.cs" />
+    <Compile Include="EPM\ISMMSDDAL.cs" />
+    <Compile Include="EPM\ISMSDAL.cs" />
+    <Compile Include="EPM\ISMSolderPasteGlueDAL.cs" />
+    <Compile Include="EPM\ISMFixtureTransDAL.cs" />
+    <Compile Include="EPM\ISMJobDataRecordsDAL.cs" />
+    <Compile Include="EPM\ISMPIDAL.cs" />
+    <Compile Include="EPM\ISMFixtureInspHeaderDAL.cs" />
+    <Compile Include="EPM\ISMInspSpecDAL.cs" />
+    <Compile Include="EPM\ISMMatInvDAL.cs" />
+    <Compile Include="EPM\ISMMaterialDAL.cs" />
+    <Compile Include="EPM\ISMMatTransDAL.cs" />
+    <Compile Include="EPM\ISMLocDAL.cs" />
+    <Compile Include="EPM\IEquipmentPMSpecDAL.cs" />
+    <Compile Include="EPM\IEquipmentPMPlanDAL.cs" />
+    <Compile Include="EPM\IEquipmentRepairHeaderDAL.cs" />
+    <Compile Include="EPM\IEquipmentFixturePMHeaderDAL.cs" />
+    <Compile Include="EPM\IEquipmentDAL.cs" />
+    <Compile Include="EPM\IFixtureCategoryDAL.cs" />
+    <Compile Include="EPM\IFixtureDAL.cs" />
+    <Compile Include="Quality\ISMTQCDataDAL.cs" />
+    <Compile Include="Quality\IUploadCiscoDataDAL.cs" />
+    <Compile Include="Quality\IWIPUnitByDJDAL.cs" />
+    <Compile Include="Quality\IWIPUnitBySNDAL.cs" />
+    <Compile Include="IReportFeedbackDAL.cs" />
+    <Compile Include="SFC\DailyRepairList\IDailyRepairListBase.cs" />
+    <Compile Include="SFC\DailyRepairList\IWipOutDAL.cs" />
+    <Compile Include="SFC\DailyRepairList\ITopTenComonentDAL.cs" />
+    <Compile Include="SFC\DailyRepairList\IMoreThanOneDAL.cs" />
+    <Compile Include="SFC\DailyRepairList\IWipInOutDAL.cs" />
+    <Compile Include="SFC\IProductArvhiveDAL.cs" />
+    <Compile Include="SFC\IProductDAL.cs" />
+    <Compile Include="IResourceDAL.cs" />
+    <Compile Include="SFC\IListOfRepairDataDAL.cs" />
+    <Compile Include="SFC\IProductErrorLogDAL.cs" />
+    <Compile Include="SFC\IWIPStatusSummaryDAL.cs" />
+    <Compile Include="SFC\IWIPStatusDetailDAL.cs" />
+    <Compile Include="SFC\IWipModuleDAL.cs" />
+    <Compile Include="SFC\IWIPProductDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SFC\IWIPLockDAL.cs" />
+    <Compile Include="WM\ISOShipmentDAL.cs" />
+    <Compile Include="WM\IFGAgingDAL.cs" />
+    <Compile Include="WM\IRawMatPackingDAL.cs" />
+    <Compile Include="WM\IRawMatPakStatusDAL.cs" />
+    <Compile Include="WM\IPickOrderDAL.cs" />
+    <Compile Include="WM\IComponentsUsedDAL.cs" />
+    <Compile Include="WM\IeJITBuildPlanDAL.cs" />
+    <Compile Include="WM\IInvOptimizationDAL.cs" />
+    <Compile Include="WM\IIPPExceptionDAL.cs" />
+    <Compile Include="WM\IiProAMLvseTraceDAL.cs" />
+    <Compile Include="WM\ILabelInfoDAL.cs" />
+    <Compile Include="WM\IAutoeJITPlanDAL.cs" />
+    <Compile Include="WM\IeJITFrequencyDAL.cs" />
+    <Compile Include="WM\IOnHandCompDAL.cs" />
+    <Compile Include="WM\ISearchCLIDDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eTrace.Model\eTrace.Model.csproj">
+      <Project>{35fa3bdf-61c8-47d7-9f34-13b2cc2b00cf}</Project>
+      <Name>eTrace.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

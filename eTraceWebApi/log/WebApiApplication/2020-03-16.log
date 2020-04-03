@@ -1,0 +1,5 @@
+2020-03-16 14:50:10,435 [1] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-03-16 14:50:13,405 [13] DEBUG WebApiApplication - WebApiApplication Application_Started
+2020-03-16 14:51:47,319 [8] DEBUG WebApiApplication - SqlDump Info:sp_GetOnhandRept  args: @sessionid-60052533-c37c-4527-9969-9b2b724e10eb,@orgcode-680,@subinv-ZR0 MC1,@locator-,@lotnumber-,@itemnum-491-000171-0000,@showdiscrepancy-true
+2020-03-16 14:51:47,331 [8] DEBUG WebApiApplication - SqlDump Info:sp_GetOnhandRept  args: @sessionid-60052533-c37c-4527-9969-9b2b724e10eb,@orgcode-680,@subinv-ZR0 MC1,@locator-,@lotnumber-,@itemnum-491-000171-0000,@showdiscrepancy-true
+2020-03-16 14:51:47,947 [8] DEBUG ADONetAppender - eTrace.Common.Log.LogHelper+SQLLOGModel

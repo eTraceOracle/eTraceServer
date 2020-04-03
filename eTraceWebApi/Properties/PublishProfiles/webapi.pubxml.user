@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\My Documents\eTraveWebApi</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>02/22/2013 08:43:40</publishTime>
+    </File>
+    <File Include="bin/eTrace.BLL.dll">
+      <publishTime>03/18/2020 07:18:09</publishTime>
+    </File>
+    <File Include="bin/eTrace.Common.dll">
+      <publishTime>03/18/2020 07:18:05</publishTime>
+    </File>
+    <File Include="bin/eTrace.Core.dll">
+      <publishTime>03/18/2020 07:18:08</publishTime>
+    </File>
+    <File Include="bin/eTrace.IBLL.dll">
+      <publishTime>03/18/2020 07:18:04</publishTime>
+    </File>
+    <File Include="bin/eTrace.IDAL.dll">
+      <publishTime>03/18/2020 07:18:04</publishTime>
+    </File>
+    <File Include="bin/eTrace.Model.dll">
+      <publishTime>03/18/2020 07:18:04</publishTime>
+    </File>
+    <File Include="bin/eTrace.Service.SDKForNet.dll">
+      <publishTime>03/18/2020 07:18:05</publishTime>
+    </File>
+    <File Include="bin/eTrace.SqlServerDAL.dll">
+      <publishTime>03/18/2020 07:18:07</publishTime>
+    </File>
+    <File Include="bin/eTraceWebApi.dll">
+      <publishTime>03/18/2020 07:18:12</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>08/15/2018 17:16:34</publishTime>
+    </File>
+    <File Include="bin/log4net.config">
+      <publishTime>02/27/2020 09:51:00</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>03/08/2017 19:26:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/27/2018 18:07:34</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/NPOI.OOXML.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXml4Net.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXmlFormats.dll">
+      <publishTime>12/17/2018 19:15:12</publishTime>
+    </File>
+    <File Include="bin/RptQualityData.dll">
+      <publishTime>03/18/2020 07:18:04</publishTime>
+    </File>
+    <File Include="bin/Swashbuckle.Core.dll">
+      <publishTime>07/08/2017 01:30:56</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 13:00:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>11/28/2018 12:58:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>10/01/2013 20:54:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>11/28/2018 13:01:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/28/2018 13:01:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/28/2018 13:02:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>09/04/2013 02:27:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>10/01/2013 20:54:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>10/01/2013 20:54:26</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>02/08/2013 16:42:28</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/09/2019 11:31:02</publishTime>
+    </File>
+    <File Include="log4net.config">
+      <publishTime>02/27/2020 09:51:00</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataSet.datasource">
+      <publishTime>10/15/2019 10:50:48</publishTime>
+    </File>
+    <File Include="Properties/DataSources/System.Data.DataTable.datasource">
+      <publishTime>10/15/2019 10:50:48</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.AccessCard.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.BJ_Rs.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.CancelMOResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.CheckBoxIDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.CheckProdLineResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.CheckProdLine_LDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.CLIDSlot.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ConfirmCLIDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ConfirmCLID_LDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ConfirmMOResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ConversionResult.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.CreateGRResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.DeleteMslResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.dj_response.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetCycleCount.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetDJInfoSMTResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetItemsResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetJobHeader2Response.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetJobHeaderResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetJobMslResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetMSLMachineResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetMSLModelResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetProdLineByLineTypeResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetProdLineResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetProductStructureResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GetSMTMachinesResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.GRHeaderStructure.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.HW_ExportDataInfo.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.InsertJobResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.InsertMslResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ItemData.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ItemRevList.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ItemType.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.MOData.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.MOrderPostResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.MOSpecialPickResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.MO_Information.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.MO_List.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.NewSeqNOResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.PCBSlotLightOnResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.PostBatchRslt.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.PostSLEDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.PPDataRst.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.PrintSMTDJLabelResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.PrintSMTDJLabel_LDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ProcessDockingResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ProcessDocking_LDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ProdPickingResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ProdPickingStructure.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ReadEventIDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ReadEventID_LDResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.Result.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.SAPPN_Check.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.ShipInfo.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.SlotCheckResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.SlotShortageList.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.SMTCLIDStatusChangedByPCResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.SMTCLIDStatusChangedResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.SMTData.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.UpdateJobResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.UpdateJobStatusResponse.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/eTraceOracleERP/eTraceWebApi.eTraceOracleERP.UserData.datasource">
+      <publishTime>11/22/2019 08:56:58</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.AccessCard.datasource">
+      <publishTime>10/18/2019 19:01:22</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.BJ_Rs.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CancelMOResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CheckBoxIDResponse.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CheckProdLineResponse.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CheckProdLine_LDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CLIDSlot.datasource">
+      <publishTime>10/18/2019 19:01:22</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CLID_Info.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ConfirmCLIDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ConfirmCLID_LDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ConfirmMOResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ConnectionTestResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ConnTestData.datasource">
+      <publishTime>10/18/2019 19:01:22</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ConversionResult.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.CreateGRResponse.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.DeleteMslResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.dj_response.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetCycleCount.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetDJInfoSMTResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetItemsResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetJobHeader2Response.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetJobHeaderResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetJobMslResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetMSLMachineResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetMSLModelResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetProdLineByLineTypeResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetProdLineResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetProductStructureResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GetSMTMachinesResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.GRHeaderStructure.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.HW_ExportDataInfo.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.InsertJobResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.InsertMslResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ItemData.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ItemRevList.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ItemType.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.MOData.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.MOrderPostResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.MOSpecialPickResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.MO_Information.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.MO_List.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.NewSeqNOResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.PCBSlotLightOnResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.PostBatchRslt.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.PostSLEDResponse.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.PPDataRst.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.PrintSMTDJLabelResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.PrintSMTDJLabel_LDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ProcessDockingResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ProcessDocking_LDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ProdPickingResponse.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ProdPickingStructure.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ReadEventIDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ReadEventID_LDResponse.datasource">
+      <publishTime>10/18/2019 19:01:28</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.Result.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.SAPPN_Check.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.ShipInfo.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.SlotCheckResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.SlotShortageList.datasource">
+      <publishTime>10/18/2019 19:01:26</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.SMTCLIDStatusChangedByPCResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.SMTCLIDStatusChangedResponse.datasource">
+      <publishTime>10/18/2019 19:01:32</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.SMTData.datasource">
+      <publishTime>10/18/2019 19:01:22</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.UpdateJobResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.UpdateJobStatusResponse.datasource">
+      <publishTime>10/18/2019 19:01:30</publishTime>
+    </File>
+    <File Include="Service References/sfc/eTraceWebApi.sfc.UserData.datasource">
+      <publishTime>10/18/2019 19:01:24</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/18/2020 07:18:13</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

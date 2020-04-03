@@ -1,0 +1,236 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTraceWebApi", "eTraceWebApi\eTraceWebApi.csproj", "{E61A06C7-96E6-4059-9CF5-AE078F6FDA79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTraceWebApi.Tests", "eTraceWebApi.Tests\eTraceWebApi.Tests.csproj", "{96B67240-5F48-4D22-ADFF-F8132F273D2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-DAL", "3-DAL", "{3831931C-C227-4D0A-AB9F-87D8A9A3D8BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-BLL", "2-BLL", "{A6AFED0A-902D-4313-85E2-1ED8DDC3659C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Common", "4-Common", "{74FD1607-8282-4FED-927B-858FB86F90EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-Job", "6-Job", "{E3F26CAC-1B13-439F-8331-720FC0C73DB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Server", "5-Server", "{3F5D8F67-1736-46C0-AE33-83DC432F20B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7-UnitTest", "7-UnitTest", "{C46ACA05-7579-40B0-AF41-E63043A45E94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Lib", "1-Lib", "{A6BE6C11-294F-4876-AEEB-012766B470FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Model", "eTrace.Model\eTrace.Model.csproj", "{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Core", "eTrace.Core\eTrace.Core.csproj", "{A69A58D2-69CC-4A23-B595-788BAE882CE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Report.SqlServerDAL", "eTrace.SqlServerDAL\eTrace.Report.SqlServerDAL.csproj", "{43CFBD6D-9EC6-496C-A0FF-F47BD585153C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Report.IDAL", "eTrace.IDAL\eTrace.Report.IDAL.csproj", "{25E934DB-EBDA-4919-8B31-C99A10FC345E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Report.IBLL", "eTrace.IBLL\eTrace.Report.IBLL.csproj", "{B922E900-65FB-4BB1-A37F-E50EFFCE2F05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Report.BLL", "eTrace.BLL\eTrace.Report.BLL.csproj", "{1FBA224C-714F-4138-8490-61945063C3AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.IJob", "eTrace.IJob\eTrace.IJob.csproj", "{594930CF-70FB-401A-8654-33104953CB44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.BLL.Tests", "eTrace.BLL.Tests\eTrace.BLL.Tests.csproj", "{E1424801-0B99-4516-A4E1-DFF26A865038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Job.EmailTask", "eTrace.Job.EmailTask\eTrace.Job.EmailTask.csproj", "{8E2A29E8-99DA-4D41-8E27-67F51BFB8940}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Service.SDKForNet", "eTrace.Service.SDKForNet\eTrace.Service.SDKForNet.csproj", "{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTraceWebApi.Host", "eTraceWebApi.Host\eTraceWebApi.Host.csproj", "{6752F7D5-BFF0-4478-9DD2-4114D96E46FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTraceJob.Host", "eTraceJob.Host\eTraceJob.Host.csproj", "{9E0B9843-40FA-4B2D-9EF7-934F22162143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Job.Base", "eTrace.Job.Base\eTrace.Job.Base.csproj", "{DF8CE379-5D07-4D96-951B-188A937F72F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTrace.Common", "eTrace.Common\eTrace.Common.csproj", "{3B07DBFC-7786-42B9-9081-66C4F2C2AE70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7FD7BEF3-0481-4FED-ABF0-02C28EE2CDF5}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\.nuget.zip = .nuget\.nuget.zip
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VBHelper", "VBHelper", "{3921DADC-FB5C-47D5-9F44-5490AD532090}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RptQualityData", "RptQualityData\RptQualityData\RptQualityData.vbproj", "{6C736BDD-2920-4C60-8E76-C9030BB78A3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E61A06C7-96E6-4059-9CF5-AE078F6FDA79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61A06C7-96E6-4059-9CF5-AE078F6FDA79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61A06C7-96E6-4059-9CF5-AE078F6FDA79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61A06C7-96E6-4059-9CF5-AE078F6FDA79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B67240-5F48-4D22-ADFF-F8132F273D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B67240-5F48-4D22-ADFF-F8132F273D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B67240-5F48-4D22-ADFF-F8132F273D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B67240-5F48-4D22-ADFF-F8132F273D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A69A58D2-69CC-4A23-B595-788BAE882CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A69A58D2-69CC-4A23-B595-788BAE882CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A69A58D2-69CC-4A23-B595-788BAE882CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A69A58D2-69CC-4A23-B595-788BAE882CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43CFBD6D-9EC6-496C-A0FF-F47BD585153C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CFBD6D-9EC6-496C-A0FF-F47BD585153C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CFBD6D-9EC6-496C-A0FF-F47BD585153C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CFBD6D-9EC6-496C-A0FF-F47BD585153C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25E934DB-EBDA-4919-8B31-C99A10FC345E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E934DB-EBDA-4919-8B31-C99A10FC345E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E934DB-EBDA-4919-8B31-C99A10FC345E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E934DB-EBDA-4919-8B31-C99A10FC345E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B922E900-65FB-4BB1-A37F-E50EFFCE2F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B922E900-65FB-4BB1-A37F-E50EFFCE2F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B922E900-65FB-4BB1-A37F-E50EFFCE2F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B922E900-65FB-4BB1-A37F-E50EFFCE2F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBA224C-714F-4138-8490-61945063C3AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBA224C-714F-4138-8490-61945063C3AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBA224C-714F-4138-8490-61945063C3AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBA224C-714F-4138-8490-61945063C3AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594930CF-70FB-401A-8654-33104953CB44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594930CF-70FB-401A-8654-33104953CB44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594930CF-70FB-401A-8654-33104953CB44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594930CF-70FB-401A-8654-33104953CB44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1424801-0B99-4516-A4E1-DFF26A865038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1424801-0B99-4516-A4E1-DFF26A865038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1424801-0B99-4516-A4E1-DFF26A865038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1424801-0B99-4516-A4E1-DFF26A865038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2A29E8-99DA-4D41-8E27-67F51BFB8940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2A29E8-99DA-4D41-8E27-67F51BFB8940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2A29E8-99DA-4D41-8E27-67F51BFB8940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2A29E8-99DA-4D41-8E27-67F51BFB8940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6752F7D5-BFF0-4478-9DD2-4114D96E46FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6752F7D5-BFF0-4478-9DD2-4114D96E46FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6752F7D5-BFF0-4478-9DD2-4114D96E46FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6752F7D5-BFF0-4478-9DD2-4114D96E46FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0B9843-40FA-4B2D-9EF7-934F22162143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0B9843-40FA-4B2D-9EF7-934F22162143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0B9843-40FA-4B2D-9EF7-934F22162143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0B9843-40FA-4B2D-9EF7-934F22162143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8CE379-5D07-4D96-951B-188A937F72F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8CE379-5D07-4D96-951B-188A937F72F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8CE379-5D07-4D96-951B-188A937F72F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8CE379-5D07-4D96-951B-188A937F72F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B07DBFC-7786-42B9-9081-66C4F2C2AE70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B07DBFC-7786-42B9-9081-66C4F2C2AE70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B07DBFC-7786-42B9-9081-66C4F2C2AE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B07DBFC-7786-42B9-9081-66C4F2C2AE70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C736BDD-2920-4C60-8E76-C9030BB78A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C736BDD-2920-4C60-8E76-C9030BB78A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C736BDD-2920-4C60-8E76-C9030BB78A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C736BDD-2920-4C60-8E76-C9030BB78A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E61A06C7-96E6-4059-9CF5-AE078F6FDA79} = {3F5D8F67-1736-46C0-AE33-83DC432F20B1}
+		{96B67240-5F48-4D22-ADFF-F8132F273D2A} = {C46ACA05-7579-40B0-AF41-E63043A45E94}
+		{35FA3BDF-61C8-47D7-9F34-13B2CC2B00CF} = {74FD1607-8282-4FED-927B-858FB86F90EB}
+		{A69A58D2-69CC-4A23-B595-788BAE882CE0} = {74FD1607-8282-4FED-927B-858FB86F90EB}
+		{43CFBD6D-9EC6-496C-A0FF-F47BD585153C} = {3831931C-C227-4D0A-AB9F-87D8A9A3D8BB}
+		{25E934DB-EBDA-4919-8B31-C99A10FC345E} = {3831931C-C227-4D0A-AB9F-87D8A9A3D8BB}
+		{B922E900-65FB-4BB1-A37F-E50EFFCE2F05} = {A6AFED0A-902D-4313-85E2-1ED8DDC3659C}
+		{1FBA224C-714F-4138-8490-61945063C3AC} = {A6AFED0A-902D-4313-85E2-1ED8DDC3659C}
+		{594930CF-70FB-401A-8654-33104953CB44} = {E3F26CAC-1B13-439F-8331-720FC0C73DB1}
+		{E1424801-0B99-4516-A4E1-DFF26A865038} = {C46ACA05-7579-40B0-AF41-E63043A45E94}
+		{8E2A29E8-99DA-4D41-8E27-67F51BFB8940} = {E3F26CAC-1B13-439F-8331-720FC0C73DB1}
+		{1C6B7FCF-D21B-4282-BA4E-B8784D3814BB} = {3F5D8F67-1736-46C0-AE33-83DC432F20B1}
+		{6752F7D5-BFF0-4478-9DD2-4114D96E46FB} = {3F5D8F67-1736-46C0-AE33-83DC432F20B1}
+		{9E0B9843-40FA-4B2D-9EF7-934F22162143} = {3F5D8F67-1736-46C0-AE33-83DC432F20B1}
+		{DF8CE379-5D07-4D96-951B-188A937F72F3} = {E3F26CAC-1B13-439F-8331-720FC0C73DB1}
+		{3B07DBFC-7786-42B9-9081-66C4F2C2AE70} = {74FD1607-8282-4FED-927B-858FB86F90EB}
+		{3921DADC-FB5C-47D5-9F44-5490AD532090} = {A6BE6C11-294F-4876-AEEB-012766B470FE}
+		{6C736BDD-2920-4C60-8E76-C9030BB78A3A} = {3921DADC-FB5C-47D5-9F44-5490AD532090}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 18
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://cnapgzhosql17:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = eTrace.BLL.Tests\\eTrace.BLL.Tests.csproj
+		SccProjectTopLevelParentUniqueName1 = eTraceServer.sln
+		SccProjectName1 = eTrace.BLL.Tests
+		SccLocalPath1 = eTrace.BLL.Tests
+		SccProjectUniqueName2 = eTrace.Common\\eTrace.Common.csproj
+		SccProjectTopLevelParentUniqueName2 = eTraceServer.sln
+		SccProjectName2 = eTrace.Common
+		SccLocalPath2 = eTrace.Common
+		SccProjectUniqueName3 = eTrace.Core\\eTrace.Core.csproj
+		SccProjectTopLevelParentUniqueName3 = eTraceServer.sln
+		SccProjectName3 = eTrace.Core
+		SccLocalPath3 = eTrace.Core
+		SccProjectUniqueName4 = eTrace.IJob\\eTrace.IJob.csproj
+		SccProjectTopLevelParentUniqueName4 = eTraceServer.sln
+		SccProjectName4 = eTrace.IJob
+		SccLocalPath4 = eTrace.IJob
+		SccProjectUniqueName5 = eTrace.Job.Base\\eTrace.Job.Base.csproj
+		SccProjectTopLevelParentUniqueName5 = eTraceServer.sln
+		SccProjectName5 = eTrace.Job.Base
+		SccLocalPath5 = eTrace.Job.Base
+		SccProjectUniqueName6 = eTrace.Job.EmailTask\\eTrace.Job.EmailTask.csproj
+		SccProjectTopLevelParentUniqueName6 = eTraceServer.sln
+		SccProjectName6 = eTrace.Job.EmailTask
+		SccLocalPath6 = eTrace.Job.EmailTask
+		SccProjectUniqueName7 = eTrace.Model\\eTrace.Model.csproj
+		SccProjectTopLevelParentUniqueName7 = eTraceServer.sln
+		SccProjectName7 = eTrace.Model
+		SccLocalPath7 = eTrace.Model
+		SccProjectUniqueName8 = eTrace.Service.SDKForNet\\eTrace.Service.SDKForNet.csproj
+		SccProjectTopLevelParentUniqueName8 = eTraceServer.sln
+		SccProjectName8 = eTrace.Service.SDKForNet
+		SccLocalPath8 = eTrace.Service.SDKForNet
+		SccProjectUniqueName9 = eTraceJob.Host\\eTraceJob.Host.csproj
+		SccProjectTopLevelParentUniqueName9 = eTraceServer.sln
+		SccProjectName9 = eTraceJob.Host
+		SccLocalPath9 = eTraceJob.Host
+		SccProjectUniqueName10 = eTraceWebApi.Host\\eTraceWebApi.Host.csproj
+		SccProjectTopLevelParentUniqueName10 = eTraceServer.sln
+		SccProjectName10 = eTraceWebApi.Host
+		SccLocalPath10 = eTraceWebApi.Host
+		SccProjectUniqueName11 = eTraceWebApi.Tests\\eTraceWebApi.Tests.csproj
+		SccProjectTopLevelParentUniqueName11 = eTraceServer.sln
+		SccProjectName11 = eTraceWebApi.Tests
+		SccLocalPath11 = eTraceWebApi.Tests
+		SccProjectUniqueName12 = eTraceWebApi\\eTraceWebApi.csproj
+		SccProjectTopLevelParentUniqueName12 = eTraceServer.sln
+		SccProjectName12 = eTraceWebApi
+		SccLocalPath12 = eTraceWebApi
+		SccProjectUniqueName13 = eTrace.BLL\\eTrace.Report.BLL.csproj
+		SccProjectTopLevelParentUniqueName13 = eTraceServer.sln
+		SccProjectName13 = eTrace.BLL
+		SccLocalPath13 = eTrace.BLL
+		SccProjectUniqueName14 = eTrace.IBLL\\eTrace.Report.IBLL.csproj
+		SccProjectTopLevelParentUniqueName14 = eTraceServer.sln
+		SccProjectName14 = eTrace.IBLL
+		SccLocalPath14 = eTrace.IBLL
+		SccProjectUniqueName15 = eTrace.IDAL\\eTrace.Report.IDAL.csproj
+		SccProjectTopLevelParentUniqueName15 = eTraceServer.sln
+		SccProjectName15 = eTrace.IDAL
+		SccLocalPath15 = eTrace.IDAL
+		SccProjectUniqueName16 = eTrace.SqlServerDAL\\eTrace.Report.SqlServerDAL.csproj
+		SccProjectTopLevelParentUniqueName16 = eTraceServer.sln
+		SccProjectName16 = eTrace.SqlServerDAL
+		SccLocalPath16 = eTrace.SqlServerDAL
+		SccProjectUniqueName17 = RptQualityData\\RptQualityData\\RptQualityData.vbproj
+		SccProjectTopLevelParentUniqueName17 = eTraceServer.sln
+		SccProjectName17 = RptQualityData/RptQualityData
+		SccLocalPath17 = RptQualityData\\RptQualityData
+	EndGlobalSection
+EndGlobal
